@@ -1,4 +1,4 @@
-import react, { Component } from 'react';
+import React, { Component } from 'react';
 
 class DateSubmitForm extends Component {
   constructor() {
@@ -10,11 +10,11 @@ class DateSubmitForm extends Component {
 
   render() {
     return (
-      <div>
-        <h1>WHO ARE YOU?</h1>
-        <h3>What Is Your Name?</h3>
+      <div className="dateSubmitForm">
+        <h1>{this.props.headerText}</h1>
+        <h3>{this.props.inputOneText}</h3>
         <input type="text" />
-        <h3>What Is Your Birthday</h3>
+        <h3>{this.props.inputTwoText}</h3>
         <input type="date" />
       </div>
     )
