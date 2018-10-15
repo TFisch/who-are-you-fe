@@ -10,7 +10,15 @@ class DateSubmitForm extends Component {
 
   render() {
     return (
-      null
+      <div>
+        <h1>WHO ARE YOU?</h1>
+        <h3>What Is Your Name?</h3>
+        <input type="text" />
+        <h3>What Is Your Birthday</h3>
+        <input type="date" />
+      </div>
     )
   }
 }
+
+export default DateSubmitForm;
