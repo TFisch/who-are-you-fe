@@ -1,7 +1,11 @@
 import React from 'react';
 
-const CardContainer = () => {
-
+const CardContainer = (props) => {
+  return (
+    <div className="card-container">
+      {props.children}
+    </div>
+  )
 }
 
 export default CardContainer;
