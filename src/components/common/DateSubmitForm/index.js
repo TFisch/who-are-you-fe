@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Submit from '../Submit';
 
 class DateSubmitForm extends Component {
   constructor() {
@@ -14,15 +15,20 @@ class DateSubmitForm extends Component {
     this.setState({ [name]: value })
   }
 
+  handleSubmit = () => {
+    console.log('er');
+  }
+
   render() {
     return (
-      <div className="dateSubmitForm">
+      <form className="date-submit-form">
         <h1>{this.props.headerText}</h1>
         <h3>{this.props.inputOneText}</h3>
         <input type="text" name="nameInput" onChange={this.handleChange} value={this.nameInput} />
         <h3>{this.props.inputTwoText}</h3>
         <input type="date" name="dateInput" onChange={this.handleChange} value={this.dateInput} />
-      </div>
+        <Submit handleSubmit={this.handleSubmit} />
+      </form>
     )
   }
 }
