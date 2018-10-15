@@ -1,5 +1,6 @@
 export const fetchDeaths = async () => {
-  const url = process.env.REACT_APP_DATABASE_API_URL + "/";
+  const url = process.env.REACT_APP_DATABASE_API_URL + '/api/v1/deaths';
   const response = await fetch(url);
-  console.log(response);
+  const data = await response.json();
+  await console.log(data);
 }
