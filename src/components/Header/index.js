@@ -9,7 +9,10 @@ class Header extends Component {
 
   render() {
     return (
-      null
+      <nav className="header">
+        <h1>Who Were You?</h1>
+        <div className="button-wrap"></div>
+      </nav>
     )
   }
 
