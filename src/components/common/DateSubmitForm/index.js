@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Submit from '../Submit';
 import './styles.scss';
+import { concatDates, getMonthString, checkDay } from '../../../utilities/helper';
 
 class DateSubmitForm extends Component {
   constructor() {
@@ -19,6 +20,13 @@ class DateSubmitForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    const date = this.state.dateInput;
+    const day = date.substring(8, 10);
+    const month = date.substring(5, 7);
+    const year = date.substring(0, 4);
+    const dayString = checkDay(day);
+    const monthString = getMonthString(month);
+    const cleanedDate = concatDates(monthString, dayString);
 
   }
 
