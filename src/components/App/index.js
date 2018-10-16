@@ -7,22 +7,31 @@ import { fetchDeaths } from '../../utilities/apiCalls'
 class App extends Component {
   constructor() {
     super()
+    this.state = {
+      showSubmitForm: true,
+    }
   }
 
   componentDidMount() {
     fetchDeaths();
   }
 
+  hideForm = () => {
+    this.setState({ showSubmitForm: false })
+  }
 
   render() {
     return (
       <div>
         <Header />
-        <DateSubmitForm
-          headerText="WHO ARE YOU?"
-          inputOneText="What is your name?"
-          inputTwoText="What is your birthday?"
-        />
+        {this.state.showSubmitForm &&
+          <DateSubmitForm
+            headerText="WHO ARE YOU?"
+            inputOneText="What is your name?"
+            inputTwoText="What is your birthday?"
+            hideForm={this.hideForm}
+          />
+        }
       </div>
 
     )
