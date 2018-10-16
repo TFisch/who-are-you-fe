@@ -3,6 +3,5 @@ export const fetchDeaths = async () => {
   const response = await fetch(url);
   const data = await response.json();
   await console.log(data);
-  // edit
 }
 

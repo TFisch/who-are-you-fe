@@ -7,7 +7,9 @@ class DateSubmitForm extends Component {
     super()
     this.state = {
       nameInput: "",
-      dateInput: 0
+      monthInput: 0,
+      dayInput: 0,
+      yearInput: 0
     }
   }
 
@@ -27,7 +29,9 @@ class DateSubmitForm extends Component {
         <h3>{this.props.inputOneText}</h3>
         <input type="text" name="nameInput" onChange={this.handleChange} value={this.nameInput} />
         <h3>{this.props.inputTwoText}</h3>
-        <input type="date" name="dateInput" onChange={this.handleChange} value={this.dateInput} />
+        <input type="number" name="dateInput" onChange={this.handleChange} value={this.dateInput} />
+        <input type="number" name="dateInput" onChange={this.handleChange} value={this.dateInput} />
+        <input type="number" name="dateInput" onChange={this.handleChange} value={this.dateInput} />
         <Submit handleSubmit={this.handleSubmit} />
       </form>
     )
