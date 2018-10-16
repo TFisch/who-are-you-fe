@@ -5,4 +5,3 @@ export const fetchDeaths = async () => {
   await console.log(data);
   // edit
 }
-
