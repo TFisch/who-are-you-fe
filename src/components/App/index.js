@@ -3,18 +3,20 @@ import DateSubmitForm from '../common/DateSubmitForm'
 import Header from '../Header'
 import ReincarnationDisplay from '../ReincarnationDisplay'
 import './App.css';
-import { fetchDeaths } from '../../utilities/apiCalls'
+import { fetchDeaths, fetchDateId, fetchUsers } from '../../utilities/apiCalls';
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
       showSubmitForm: true,
-    }
+
   }
 
   componentDidMount() {
-    fetchDeaths();
+    // fetchDeaths();
+    // fetchDateId('FEBRUARY 17', 1989);
+    fetchUsers();
   }
 
   hideForm = () => {
@@ -38,8 +40,7 @@ class App extends Component {
         }
 
       </div>
-
-    )
+    );
   }
 }
 
