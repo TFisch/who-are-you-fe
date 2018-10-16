@@ -7,7 +7,8 @@ class DateSubmitForm extends Component {
     super()
     this.state = {
       nameInput: "",
-      dateInput: 0
+      dateInput: 0,
+      dateSubmitted: false
     }
   }
 
@@ -18,9 +19,12 @@ class DateSubmitForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    this.setState({ dateSubmitted: true });
+    this.props.hideForm();
   }
 
   render() {
+
     return (
       <form className="date-submit-form">
         <h1>{this.props.headerText}</h1>
