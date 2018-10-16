@@ -43,7 +43,8 @@ export const getMonthString = (month) => {
 }
 
 export const concatDates = (month, day) => {
-  console.log(month);
+  const cleanDate = month.concat((' '), day);
+  return cleanDate;
 }
 
 export const checkDay = (day) => {
