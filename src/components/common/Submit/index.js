@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Submit = ({ handleSubmit }) => {
+const Submit = ({ handleSubmit, buttonText }) => {
   return (
     <button className="submit-button" onClick={handleSubmit}>
-      SUBMIT
+      {buttonText}
     </button>
   )
 }
