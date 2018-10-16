@@ -7,9 +7,8 @@ class DateSubmitForm extends Component {
     super()
     this.state = {
       nameInput: "",
-      monthInput: 0,
-      dayInput: 0,
-      yearInput: 0
+      dateInput: "0000-00-00",
+
     }
   }
 
@@ -18,8 +17,9 @@ class DateSubmitForm extends Component {
     this.setState({ [name]: value })
   }
 
-  handleSubmit = () => {
-    console.log('er');
+  handleSubmit = (e) => {
+    e.preventDefault();
+
   }
 
   render() {
@@ -29,9 +29,7 @@ class DateSubmitForm extends Component {
         <h3>{this.props.inputOneText}</h3>
         <input type="text" name="nameInput" onChange={this.handleChange} value={this.nameInput} />
         <h3>{this.props.inputTwoText}</h3>
-        <input type="number" name="dateInput" onChange={this.handleChange} value={this.dateInput} />
-        <input type="number" name="dateInput" onChange={this.handleChange} value={this.dateInput} />
-        <input type="number" name="dateInput" onChange={this.handleChange} value={this.dateInput} />
+        <input type="date" name="dateInput" min="2000-01-02" max="2004-12-31" onChange={this.handleChange} value={this.dateInput} />
         <Submit handleSubmit={this.handleSubmit} />
       </form>
     )
