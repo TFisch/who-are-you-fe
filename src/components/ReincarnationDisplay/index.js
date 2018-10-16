@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Submit from '../common/Submit';
+import './styles.scss';
 
 
 class ReincarnationDisplay extends Component {
