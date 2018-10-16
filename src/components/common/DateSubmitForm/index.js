@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Submit from '../Submit';
+import './styles.scss';
 
 class DateSubmitForm extends Component {
   constructor() {
