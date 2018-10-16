@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavButton from '../common/NavButton'
 import './styles.css'
 
 class Header extends Component {
@@ -12,7 +13,11 @@ class Header extends Component {
     return (
       <nav className="header">
         <h1>Who Were You?</h1>
-        <div className="button-wrap"></div>
+        <div className="button-wrap">
+          <NavButton buttonText="DEATHS" />
+          <NavButton buttonText="REINCARNATIONS" />
+          <NavButton buttonText="ADD A DEATH" />
+        </div>
       </nav>
     )
   }
