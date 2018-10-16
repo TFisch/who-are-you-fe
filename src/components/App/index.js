@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-import DateSubmitForm from '../common/DateSubmitForm'
-import Header from '../Header'
+import DateSubmitForm from '../common/DateSubmitForm';
+import Header from '../Header';
 import './App.css';
-import { fetchDeaths } from '../../utilities/apiCalls'
+import { fetchDeaths, fetchDateId, fetchUsers } from '../../utilities/apiCalls';
 
 class App extends Component {
   constructor() {
-    super()
+    super();
   }
 
   componentDidMount() {
-    fetchDeaths();
+    // fetchDeaths();
+    // fetchDateId('FEBRUARY 17', 1989);
+    fetchUsers();
   }
-
 
   render() {
     return (
@@ -24,8 +25,7 @@ class App extends Component {
           inputTwoText="What is your birthday?"
         />
       </div>
-
-    )
+    );
   }
 }
 
