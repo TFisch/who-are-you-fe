@@ -29,3 +29,30 @@ export const fetchUsers = async () => {
   const users = await response.json();
   console.log(users);
 };
+
+export const postUsers = async (name, death, notes) => {
+  const url = process.env.REACT_APP_DATABASE_API_URL + `/api/v1/users/`;
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: 'application/json',
+    body: JSON.stringify({
+      name: name,
+      death_id: death.id,
+      date_id: death.date_id,
+      notes
+    })
+  });
+  const user = response.json();
+  console.log(user);
+};
+
+// export const deleteUsers = async userId => {
+//   const url = process.env.REACT_APP_DATABASE_API_URL + `/api/v1/users/`;
+//   const response = await fetch(url, {
+//     method: 'DELETE',
+//     headers: 'application/json',
+//     body: JSON.stringify({
+//       id: userId
+//     })
+//   });
+// };

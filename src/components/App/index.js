@@ -11,7 +11,7 @@ class App extends Component {
 
   componentDidMount() {
     // fetchDeaths();
-    // fetchDateId('FEBRUARY 17', 1989);
+    fetchDateId('FEBRUARY 17', 1989);
     fetchUsers();
   }
 
