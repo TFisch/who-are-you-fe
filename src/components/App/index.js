@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DateSubmitForm from '../common/DateSubmitForm'
 import Header from '../Header'
+import ReincarnationDisplay from '../ReincarnationDisplay'
 import './App.css';
 import { fetchDeaths } from '../../utilities/apiCalls'
 
@@ -32,6 +33,10 @@ class App extends Component {
             hideForm={this.hideForm}
           />
         }
+        {!this.state.showSubmitForm &&
+          <ReincarnationDisplay />
+        }
+
       </div>
 
     )
