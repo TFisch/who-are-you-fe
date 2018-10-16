@@ -16,8 +16,8 @@ class DateSubmitForm extends Component {
     this.setState({ [name]: value })
   }
 
-  handleSubmit = () => {
-    console.log('er');
+  handleSubmit = (e) => {
+    e.preventDefault();
   }
 
   render() {
@@ -28,7 +28,7 @@ class DateSubmitForm extends Component {
         <input type="text" name="nameInput" onChange={this.handleChange} value={this.nameInput} />
         <h3>{this.props.inputTwoText}</h3>
         <input type="date" name="dateInput" onChange={this.handleChange} value={this.dateInput} />
-        <Submit handleSubmit={this.handleSubmit} />
+        <Submit handleSubmit={this.handleSubmit} buttonText="SUBMIT" />
       </form>
     )
   }
