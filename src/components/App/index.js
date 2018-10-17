@@ -45,26 +45,13 @@ class App extends Component {
     this.setState({ showSubmitForm: false, showReincarnatedUsers: true });
   };
 
-  // showReincarnatedUsers = () => {
-  //   this.setState({ showReincarnatedUsers: true });
-  // };
-
   showReincarnation = () => {
     this.setState({ showReincarnation: true });
   };
 
   getCleanUsers = async () => {
     const cleanUsers = await fetchUsers();
-    // const unresolvedCleanUsers = await users.map(async user => {
-    //   const cleanUser = await userCleaner(user);
-    //   return cleanUser;
-    // });
-    // const cleanUsers = await Promise.all(unresolvedCleanUsers);
-    console.log(cleanUsers);
-
     this.setState({ cleanUsers });
-
-    // await this.setState({ cleanUsers: resolvedCleanUsers });
   };
 
   render() {
