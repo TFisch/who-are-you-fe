@@ -27,39 +27,37 @@ class App extends Component {
       showReincarnation: false,
       showReincarnationDisplay: false,
       cleanUsers: []
-    }
+    };
   }
-
-
 
   findDeathMatch = async (cleanedDate, year) => {
     const dateId = await fetchDateId(cleanedDate, year);
     const deathsByDate = await fetchDeathByDate(dateId, year);
-    await this.setState({ deathsByDate, showReincarnationDisplay: true })
-  }
+    await this.setState({ deathsByDate, showReincarnationDisplay: true });
+  };
 
   hideForm = () => {
     this.setState({ showSubmitForm: false });
-  }
+  };
 
   handleDeathSubmit = (cleanedDate, year, username) => {
     this.hideForm();
     this.setState({ username });
     this.findDeathMatch(cleanedDate, year);
-  }
+  };
 
   showReincarnatedUsers = () => {
-    this.setState({ showReincarnation: true });
+    this.setState({ showReincarnatedUsers: true });
   };
 
   showReincarnationDisplay = () => {
     this.setState({ showReincarnationDisplay: true });
   };
 
-
   getCleanUsers = async () => {
     const cleanUsers = await fetchUsers();
     this.setState({ cleanUsers });
+    console.log(this.state.showReincarnatedUsers);
   };
 
   handleClick = async e => {
@@ -68,7 +66,13 @@ class App extends Component {
   };
 
   render() {
-    const { showSubmitForm, deathsByDate, username, showReincarnatedUsers, showReincarnationDisplay } = this.state;
+    const {
+      showSubmitForm,
+      deathsByDate,
+      username,
+      showReincarnatedUsers,
+      showReincarnationDisplay
+    } = this.state;
     return (
       <div>
         <Header
@@ -87,9 +91,12 @@ class App extends Component {
           />
         )}
 
-        {showReincarnationDisplay &&
-          <ReincarnationDisplay deathsByDate={deathsByDate} username={username} />
-        }
+        {showReincarnationDisplay && (
+          <ReincarnationDisplay
+            deathsByDate={deathsByDate}
+            username={username}
+          />
+        )}
 
         {showReincarnatedUsers && (
           <CardContainer
