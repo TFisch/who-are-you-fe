@@ -1,9 +1,10 @@
+import { userCleaner } from './helper';
+
 export const fetchDeaths = async () => {
   const url = process.env.REACT_APP_DATABASE_API_URL + '/api/v1/deaths';
   const response = await fetch(url);
   const data = await response.json();
   await console.log(data);
-
 };
 
 export const fetchDateId = async day => {
@@ -13,6 +14,22 @@ export const fetchDateId = async day => {
   const response = await fetch(url);
   const dateId = await response.json();
   return await dateId;
+};
+
+export const fetchDateById = async dateId => {
+  const url =
+    process.env.REACT_APP_DATABASE_API_URL + `/api/v1/dates/${dateId}/id`;
+  const response = await fetch(url);
+  const day = await response.json();
+  return await day;
+};
+
+export const fetchDeathById = async deathId => {
+  const url =
+    process.env.REACT_APP_DATABASE_API_URL + `/api/v1/deaths/${deathId}`;
+  const response = await fetch(url);
+  const deadPerson = await response.json();
+  return await deadPerson;
 };
 
 export const fetchDeathByDate = async (dateId, year) => {
@@ -27,7 +44,11 @@ export const fetchUsers = async () => {
   const url = process.env.REACT_APP_DATABASE_API_URL + `/api/v1/users/`;
   const response = await fetch(url);
   const users = await response.json();
-  return await users;
+  const unresolvedCleanUsers = await users.map(async user => {
+    const cleanUser = await userCleaner(user);
+    return cleanUser;
+  });
+  return await Promise.all(unresolvedCleanUsers);
 };
 
 export const postUsers = async (name, death, notes) => {
@@ -47,7 +68,7 @@ export const postUsers = async (name, death, notes) => {
   return await user;
 };
 
-export const deleteUsers = async userId => {
+export const deleteUser = async userId => {
   const url =
     process.env.REACT_APP_DATABASE_API_URL + `/api/v1/users/${userId}`;
   const response = await fetch(url, {

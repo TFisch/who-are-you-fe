@@ -7,11 +7,10 @@ class DateSubmitForm extends Component {
   constructor() {
     super();
     this.state = {
-      nameInput: "",
+      nameInput: '',
       dateInput: 0,
       dateSubmitted: false,
       dobError: ""
-    }
 
   }
 
@@ -20,13 +19,13 @@ class DateSubmitForm extends Component {
     this.setState({ [name]: value });
   };
 
-
-  handleSubmit = (e) => {
+  handleSubmit = e => {
     e.preventDefault();
     const date = this.state.dateInput;
     const day = date.substring(8, 10);
     const month = date.substring(5, 7);
     const year = date.substring(0, 4);
+
     const checkBirthday = validateBirthday(day, month, year);
     if (checkBirthday === "error") {
       this.setState({ dobError: "Sorry! Birthday must fall between 1970 and 1996" })
@@ -41,7 +40,6 @@ class DateSubmitForm extends Component {
 
 
   render() {
-
     return (
       <form className="date-submit-form">
         <h1>{this.props.headerText}</h1>
@@ -53,10 +51,10 @@ class DateSubmitForm extends Component {
           value={this.nameInput}
         />
         <h3>{this.props.inputTwoText}</h3>
+
         <input type="date" name="dateInput" min="2000-01-02" max="2004-12-31" onChange={this.handleChange} value={this.dateInput} />
         <p>{this.state.dobError}</p>
         <Submit handleSubmit={this.handleSubmit} buttonText="SUBMIT" />
-
       </form>
     );
   }
