@@ -38,9 +38,9 @@ class App extends Component {
       <div>
         <Header />
         <DateSubmitForm
-          headerText="WHO ARE YOU?"
-          inputOneText="What is your name?"
-          inputTwoText="What is your birthday?"
+          headerText="Who Are You?"
+          inputOneText="what is your name?"
+          inputTwoText="what is your birthday?"
         />
       </div>
     );
