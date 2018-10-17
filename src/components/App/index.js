@@ -11,7 +11,8 @@ import {
   fetchDeathByDate,
   postUsers,
   deleteUsers,
-  updateUser
+  updateUser,
+  deleteUser
 } from '../../utilities/apiCalls';
 import { userCleaner } from '../../utilities/helper';
 
@@ -54,6 +55,11 @@ class App extends Component {
     this.setState({ cleanUsers });
   };
 
+  handleClick = async e => {
+    deleteUser(e.target.id);
+    e.target.parentNode.remove();
+  };
+
   render() {
     return (
       <div>
@@ -73,7 +79,10 @@ class App extends Component {
           />
         )}
         {this.state.showReincarnatedUsers && (
-          <CardContainer users={this.state.cleanUsers} />
+          <CardContainer
+            users={this.state.cleanUsers}
+            handleClick={this.handleClick}
+          />
         )}
         {this.state.showReincarnation && <ReincarnationDisplay />}
       </div>

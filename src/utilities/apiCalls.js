@@ -68,7 +68,7 @@ export const postUsers = async (name, death, notes) => {
   return await user;
 };
 
-export const deleteUsers = async userId => {
+export const deleteUser = async userId => {
   const url =
     process.env.REACT_APP_DATABASE_API_URL + `/api/v1/users/${userId}`;
   const response = await fetch(url, {
