@@ -1,0 +1,26 @@
+.reincarnated-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto 4rem;
+  text-align: left;
+  align-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid black; }
+
+.user-delete-button {
+  border-radius: 10%;
+  height: 2rem;
+  align-content: center;
+  align-items: center;
+  margin: auto 0; }
+
+.table-headers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto 4rem;
+  text-align: left;
+  align-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid black; }
