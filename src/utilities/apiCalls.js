@@ -2,8 +2,7 @@ export const fetchDeaths = async () => {
   const url = process.env.REACT_APP_DATABASE_API_URL + '/api/v1/deaths';
   const response = await fetch(url);
   const data = await response.json();
-  await console.log(data);
-
+  await data;
 };
 
 export const fetchDateId = async day => {
@@ -31,7 +30,6 @@ export const fetchUsers = async () => {
 };
 
 export const postUsers = async (name, death, notes) => {
-  console.log(death);
   const url = process.env.REACT_APP_DATABASE_API_URL + `/api/v1/users/`;
   const response = await fetch(url, {
     method: 'POST',
