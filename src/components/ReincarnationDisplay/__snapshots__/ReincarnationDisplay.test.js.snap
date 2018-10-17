@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReincarnationDisplay should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ReincarnationDisplay
+    props={
+      Object {
+        "buttonText": "mock",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Name! You Were DEAD PERSON in Your Past Life!
+        </h2>,
+        <div
+          className="comment-wrapper"
+        >
+          <label
+            for="comment"
+          >
+            Leave a comment:
+          </label>
+          <div
+            className="bottom-wrapper"
+          >
+            <textarea
+              class="comment"
+              name="comment"
+            />
+            <Submit
+              buttonText="SAVE"
+              handleSubmit={[Function]}
+            />
+          </div>
+        </div>,
+      ],
+      "className": "reincarnation-display",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Name! You Were DEAD PERSON in Your Past Life!",
+        },
+        "ref": null,
+        "rendered": "Name! You Were DEAD PERSON in Your Past Life!",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              for="comment"
+            >
+              Leave a comment:
+            </label>,
+            <div
+              className="bottom-wrapper"
+            >
+              <textarea
+                class="comment"
+                name="comment"
+              />
+              <Submit
+                buttonText="SAVE"
+                handleSubmit={[Function]}
+              />
+            </div>,
+          ],
+          "className": "comment-wrapper",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Leave a comment:",
+              "for": "comment",
+            },
+            "ref": null,
+            "rendered": "Leave a comment:",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <textarea
+                  class="comment"
+                  name="comment"
+                />,
+                <Submit
+                  buttonText="SAVE"
+                  handleSubmit={[Function]}
+                />,
+              ],
+              "className": "bottom-wrapper",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "class": "comment",
+                  "name": "comment",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "textarea",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "buttonText": "SAVE",
+                  "handleSubmit": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Name! You Were DEAD PERSON in Your Past Life!
+          </h2>,
+          <div
+            className="comment-wrapper"
+          >
+            <label
+              for="comment"
+            >
+              Leave a comment:
+            </label>
+            <div
+              className="bottom-wrapper"
+            >
+              <textarea
+                class="comment"
+                name="comment"
+              />
+              <Submit
+                buttonText="SAVE"
+                handleSubmit={[Function]}
+              />
+            </div>
+          </div>,
+        ],
+        "className": "reincarnation-display",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Name! You Were DEAD PERSON in Your Past Life!",
+          },
+          "ref": null,
+          "rendered": "Name! You Were DEAD PERSON in Your Past Life!",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                for="comment"
+              >
+                Leave a comment:
+              </label>,
+              <div
+                className="bottom-wrapper"
+              >
+                <textarea
+                  class="comment"
+                  name="comment"
+                />
+                <Submit
+                  buttonText="SAVE"
+                  handleSubmit={[Function]}
+                />
+              </div>,
+            ],
+            "className": "comment-wrapper",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Leave a comment:",
+                "for": "comment",
+              },
+              "ref": null,
+              "rendered": "Leave a comment:",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <textarea
+                    class="comment"
+                    name="comment"
+                  />,
+                  <Submit
+                    buttonText="SAVE"
+                    handleSubmit={[Function]}
+                  />,
+                ],
+                "className": "bottom-wrapper",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "class": "comment",
+                    "name": "comment",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "textarea",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "buttonText": "SAVE",
+                    "handleSubmit": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
