@@ -10,7 +10,8 @@ class DateSubmitForm extends Component {
       nameInput: "",
       dateInput: 0,
       dateSubmitted: false,
-      dobError: ""
+      dobError: "",
+      nameError: "",
     }
 
   }
@@ -27,6 +28,11 @@ class DateSubmitForm extends Component {
       this.setState({ dobError: "Please Enter a Valid Date of Birth!" })
       return
     }
+    if (!this.state.nameInput) {
+      this.setState({ nameError: "But WHO are you???" })
+      return
+    }
+
     const date = this.state.dateInput;
     const day = date.substring(8, 10);
     const month = date.substring(5, 7);
@@ -56,6 +62,7 @@ class DateSubmitForm extends Component {
           onChange={this.handleChange}
           value={this.nameInput}
         />
+        <p>{this.state.nameError}</p>
         <h3>{this.props.inputTwoText}</h3>
         <input type="date" name="dateInput" min="2000-01-02" max="2004-12-31" onChange={this.handleChange} value={this.dateInput} />
         <p>{this.state.dobError}</p>
