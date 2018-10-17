@@ -8,9 +8,6 @@ import {
   fetchDateId,
   fetchUsers,
   fetchDeathByDate,
-  postUsers,
-  deleteUsers,
-  updateUser
 } from '../../utilities/apiCalls';
 
 class App extends Component {
@@ -20,7 +17,6 @@ class App extends Component {
       username: '',
       showSubmitForm: true,
       deathsByDate: {}
-
     }
   }
 
@@ -34,13 +30,12 @@ class App extends Component {
   findDeathMatch = async (cleanedDate, year) => {
     const dateId = await fetchDateId(cleanedDate, year);
     const deathsByDate = await fetchDeathByDate(dateId, year);
-    await this.setState({ deathsByDate })
+    await this.setState({ deathsByDate, showSubmitForm: false })
   }
 
   hideForm = (cleanedDate, year, username) => {
     this.setState({ username });
     this.findDeathMatch(cleanedDate, year);
-    this.setState({ showSubmitForm: false })
   }
 
   render() {
