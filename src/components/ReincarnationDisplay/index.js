@@ -23,8 +23,8 @@ class ReincarnationDisplay extends Component {
 
 
   handleSubmit = (e) => {
-    const deathId = Object.values(this.props.deathsByDate[0]);
     postUsers(this.props.username, this.props.deathsByDate, this.state.notes);
+    this.setState({ notes: "" });
   }
 
   render() {
