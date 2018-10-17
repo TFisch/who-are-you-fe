@@ -18,7 +18,7 @@ class ReincarnationDisplay extends Component {
   render() {
     return (
       <article className="reincarnation-display">
-        <h2>Name! You Were DEAD PERSON in Your Past Life!</h2>
+        <h2>{this.props.username} You Were DEAD PERSON in Your Past Life!</h2>
         <div className="comment-wrapper">
           <label>Leave a comment:</label>
           <div className="bottom-wrapper">
