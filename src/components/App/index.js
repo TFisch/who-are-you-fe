@@ -2,17 +2,31 @@ import React, { Component } from 'react';
 import DateSubmitForm from '../common/DateSubmitForm';
 import Header from '../Header';
 import './App.css';
-import { fetchDeaths, fetchDateId, fetchUsers } from '../../utilities/apiCalls';
+import {
+  fetchDeaths,
+  fetchDateId,
+  fetchUsers,
+  fetchDeathByDate,
+  postUsers
+} from '../../utilities/apiCalls';
 
 class App extends Component {
   constructor() {
     super();
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     // fetchDeaths();
-    fetchDateId('FEBRUARY 17', 1989);
-    fetchUsers();
+    const notes = 'Well hello there';
+    const name = 'Cody Taft';
+
+    const dateId = await fetchDateId('FEBRUARY 17', 1989);
+    const deathByDate = await fetchDeathByDate(dateId, 1989);
+
+    const users = await fetchUsers();
+    console.log(users);
+    const postedUser = await postUsers(name, deathByDate, notes);
+    console.log(postedUser);
   }
 
   render() {
