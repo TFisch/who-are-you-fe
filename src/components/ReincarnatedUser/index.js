@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 const ReincarnatedUser = ({ user, handleClick }) => {
   return (
@@ -8,7 +9,7 @@ const ReincarnatedUser = ({ user, handleClick }) => {
       <p className="day">{user.day}</p>
       <p className="year">{user.year}</p>
       <p className="astrology-sign">{user.astrologySign}</p>
-      <button onClick={handleClick} id={user.id}>
+      <button className="user-delete-button" onClick={handleClick} id={user.id}>
         Delete User
       </button>
     </div>
