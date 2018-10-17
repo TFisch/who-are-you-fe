@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Submit from '../common/Submit';
+import { postUsers } from '../../utilities/apiCalls';
 import './styles.scss';
 
 
@@ -7,7 +8,8 @@ class ReincarnationDisplay extends Component {
   constructor() {
     super()
     this.state = {
-      deathMatch: {}
+      deathMatch: {},
+      notes: ""
     }
   }
 
@@ -15,9 +17,14 @@ class ReincarnationDisplay extends Component {
     this.setState({ deathMatch: this.props.deathsByDate })
   }
 
+  handleNotes = (e) => {
+    this.setState({ notes: e.target.value })
+  }
+
 
   handleSubmit = (e) => {
-    console.log(e);
+    const deathId = Object.values(this.props.deathsByDate[0]);
+    postUsers(this.props.username, this.props.deathsByDate, this.state.notes);
   }
 
   render() {
@@ -28,7 +35,7 @@ class ReincarnationDisplay extends Component {
         <div className="comment-wrapper">
           <label>Leave a comment:</label>
           <div className="bottom-wrapper">
-            <textarea className="comment" name="comment">
+            <textarea className="comment" name="comment" onChange={this.handleNotes} value={this.state.notes}>
             </textarea>
             <Submit buttonText="SAVE" handleSubmit={this.handleSubmit} />
           </div>
