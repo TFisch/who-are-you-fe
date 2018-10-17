@@ -12,7 +12,7 @@ class ReincarnationDisplay extends Component {
   }
 
   handleSubmit = (e) => {
-    console.log('hi')
+    console.log(e);
   }
 
   render() {
@@ -20,9 +20,9 @@ class ReincarnationDisplay extends Component {
       <article className="reincarnation-display">
         <h2>Name! You Were DEAD PERSON in Your Past Life!</h2>
         <div className="comment-wrapper">
-          <label for="comment">Leave a comment:</label>
+          <label>Leave a comment:</label>
           <div className="bottom-wrapper">
-            <textarea class="comment" name="comment">
+            <textarea className="comment" name="comment">
             </textarea>
             <Submit buttonText="SAVE" handleSubmit={this.handleSubmit} />
           </div>

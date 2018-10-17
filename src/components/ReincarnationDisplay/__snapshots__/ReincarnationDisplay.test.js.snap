@@ -4,11 +4,44 @@ exports[`ReincarnationDisplay should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ReincarnationDisplay
-    props={
+    Submit={
       Object {
-        "buttonText": "mock",
+        "addMatchers": [Function],
+        "advanceTimersByTime": [Function],
+        "autoMockOff": [Function],
+        "autoMockOn": [Function],
+        "clearAllMocks": [Function],
+        "clearAllTimers": [Function],
+        "deepUnmock": [Function],
+        "disableAutomock": [Function],
+        "doMock": [Function],
+        "dontMock": [Function],
+        "enableAutomock": [Function],
+        "fn": [Function],
+        "genMockFromModule": [Function],
+        "isMockFunction": [Function],
+        "mock": [Function],
+        "requireActual": [Function],
+        "requireMock": [Function],
+        "resetAllMocks": [Function],
+        "resetModuleRegistry": [Function],
+        "resetModules": [Function],
+        "restoreAllMocks": [Function],
+        "retryTimes": [Function],
+        "runAllImmediates": [Function],
+        "runAllTicks": [Function],
+        "runAllTimers": [Function],
+        "runOnlyPendingTimers": [Function],
+        "runTimersToTime": [Function],
+        "setMock": [Function],
+        "setTimeout": [Function],
+        "spyOn": [Function],
+        "unmock": [Function],
+        "useFakeTimers": [Function],
+        "useRealTimers": [Function],
       }
     }
+    handleSubmit={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -30,16 +63,14 @@ ShallowWrapper {
         <div
           className="comment-wrapper"
         >
-          <label
-            for="comment"
-          >
+          <label>
             Leave a comment:
           </label>
           <div
             className="bottom-wrapper"
           >
             <textarea
-              class="comment"
+              className="comment"
               name="comment"
             />
             <Submit
@@ -70,16 +101,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <label
-              for="comment"
-            >
+            <label>
               Leave a comment:
             </label>,
             <div
               className="bottom-wrapper"
             >
               <textarea
-                class="comment"
+                className="comment"
                 name="comment"
               />
               <Submit
@@ -98,7 +127,6 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Leave a comment:",
-              "for": "comment",
             },
             "ref": null,
             "rendered": "Leave a comment:",
@@ -111,7 +139,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <textarea
-                  class="comment"
+                  className="comment"
                   name="comment"
                 />,
                 <Submit
@@ -128,7 +156,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "class": "comment",
+                  "className": "comment",
                   "name": "comment",
                 },
                 "ref": null,
@@ -169,16 +197,14 @@ ShallowWrapper {
           <div
             className="comment-wrapper"
           >
-            <label
-              for="comment"
-            >
+            <label>
               Leave a comment:
             </label>
             <div
               className="bottom-wrapper"
             >
               <textarea
-                class="comment"
+                className="comment"
                 name="comment"
               />
               <Submit
@@ -209,16 +235,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <label
-                for="comment"
-              >
+              <label>
                 Leave a comment:
               </label>,
               <div
                 className="bottom-wrapper"
               >
                 <textarea
-                  class="comment"
+                  className="comment"
                   name="comment"
                 />
                 <Submit
@@ -237,7 +261,6 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Leave a comment:",
-                "for": "comment",
               },
               "ref": null,
               "rendered": "Leave a comment:",
@@ -250,7 +273,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <textarea
-                    class="comment"
+                    className="comment"
                     name="comment"
                   />,
                   <Submit
@@ -267,7 +290,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "class": "comment",
+                    "className": "comment",
                     "name": "comment",
                   },
                   "ref": null,
