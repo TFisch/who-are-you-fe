@@ -7,17 +7,30 @@ class Header extends Component {
     super();
     this.state = {};
   }
+  handleClick = async e => {
+    const buttonName = e.target.innerText;
+    switch (buttonName) {
+      case 'REINCARNATIONS':
+        await this.props.hideForm();
+        // await this.props.showReincarnatedUsers();
+        await this.props.getCleanUsers();
+        break;
+      default:
+        return;
+    }
+  };
 
   render() {
     return (
       <nav className="header">
-
         <h1 className="header-title">Who Were You?</h1>
-
         <div className="button-wrap">
-          <NavButton buttonText="DEATHS" />
-          <NavButton buttonText="REINCARNATIONS" />
-          <NavButton buttonText="ADD A DEATH" />
+          <NavButton
+            buttonText="REINCARNATIONS"
+            name="reincarnations"
+            handleClick={this.handleClick}
+          />
+          {/* <NavButton click={this.handleClick} buttonText="ADD A DEATH" /> */}
         </div>
       </nav>
     );

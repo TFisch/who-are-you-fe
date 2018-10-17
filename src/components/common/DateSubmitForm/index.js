@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import Submit from '../Submit';
 import './styles.scss';
-import { concatDates, getMonthString, checkDay } from '../../../utilities/helper';
+import {
+  concatDates,
+  getMonthString,
+  checkDay
+} from '../../../utilities/helper';
 
 class DateSubmitForm extends Component {
   constructor() {
     super();
     this.state = {
-      nameInput: "",
+      nameInput: '',
       dateInput: 0,
       dateSubmitted: false
-    }
-
+    };
   }
 
   handleChange = e => {
@@ -19,8 +22,7 @@ class DateSubmitForm extends Component {
     this.setState({ [name]: value });
   };
 
-
-  handleSubmit = (e) => {
+  handleSubmit = e => {
     e.preventDefault();
     const date = this.state.dateInput;
     const day = date.substring(8, 10);
@@ -31,11 +33,10 @@ class DateSubmitForm extends Component {
     const cleanedDate = concatDates(monthString, dayString);
     this.setState({ dateSubmitted: true });
     this.props.hideForm();
-  }
-
+    this.props.showReincarnation();
+  };
 
   render() {
-
     return (
       <form className="date-submit-form">
         <h1>{this.props.headerText}</h1>
@@ -47,10 +48,16 @@ class DateSubmitForm extends Component {
           value={this.nameInput}
         />
         <h3>{this.props.inputTwoText}</h3>
-        <input type="date" name="dateInput" min="2000-01-02" max="2004-12-31" onChange={this.handleChange} value={this.dateInput} />
+        <input
+          type="date"
+          name="dateInput"
+          min="2000-01-02"
+          max="2004-12-31"
+          onChange={this.handleChange}
+          value={this.dateInput}
+        />
 
         <Submit handleSubmit={this.handleSubmit} buttonText="SUBMIT" />
-
       </form>
     );
   }
