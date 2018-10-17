@@ -45,6 +45,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+
         {this.state.showSubmitForm &&
           <DateSubmitForm
             headerText="WHO ARE YOU?"
