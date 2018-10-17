@@ -12,7 +12,7 @@ class Header extends Component {
   render() {
     return (
       <nav className="header">
-        <h1>Who Were You?</h1>
+        <h1 className="logo">Who Were You?</h1>
         <div className="button-wrap">
           <NavButton buttonText="DEATHS" />
           <NavButton buttonText="REINCARNATIONS" />
