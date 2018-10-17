@@ -18,7 +18,7 @@ describe('DateSubmitForm', () => {
     />);
   })
 
-  it('should be a test', () => {
-
+  it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
   });
 });
