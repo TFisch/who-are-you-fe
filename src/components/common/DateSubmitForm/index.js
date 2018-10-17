@@ -48,6 +48,7 @@ class DateSubmitForm extends Component {
         />
         <h3>{this.props.inputTwoText}</h3>
         <input type="date" name="dateInput" min="2000-01-02" max="2004-12-31" onChange={this.handleChange} value={this.dateInput} />
+
         <Submit handleSubmit={this.handleSubmit} buttonText="SUBMIT" />
 
       </form>
