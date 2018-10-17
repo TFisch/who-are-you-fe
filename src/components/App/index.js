@@ -20,31 +20,32 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      username: '',
       showSubmitForm: true,
+      deathsByDate: {},
       showReincarnatedUsers: false,
       showReincarnation: false,
       cleanUsers: []
-    };
+    }
   }
 
-  // async componentDidMount() {
-  //   fetchDeaths();
-  //   const notes = 'Well hello there';
-  //   const name = 'Cody Taft';
-  //   const dateId = await fetchDateId('FEBRUARY 17', 1989);
-  //   console.log(dateId);
-  //   const deathByDate = await fetchDeathByDate(dateId, 1989);
-  //   const users = await fetchUsers();
-  //   console.log(users);
-  //   const postedUser = await postUsers(name, deathByDate, notes);
-  //   console.log(postedUser);
-  //   console.log(await deleteUsers(6));
-  //   console.log(await updateUser(34, 'hi'));
-  // }
+  async componentDidMount() {
+    fetchDeaths();
+    const notes = 'Well hello there';
+    const name = 'Cody Taft';
+    const users = await fetchUsers();
+  }
 
-  hideForm = () => {
-    this.setState({ showSubmitForm: false, showReincarnatedUsers: true });
-  };
+  findDeathMatch = async (cleanedDate, year) => {
+    const dateId = await fetchDateId(cleanedDate, year);
+    const deathsByDate = await fetchDeathByDate(dateId, year);
+    await this.setState({ deathsByDate, showSubmitForm: false })
+  }
+
+  hideForm = (cleanedDate, year, username) => {
+    this.setState({ username, showSubmitForm: false, showReincarnatedUsers: true });
+    this.findDeathMatch(cleanedDate, year);
+  }
 
   showReincarnation = () => {
     this.setState({ showReincarnation: true });
@@ -61,6 +62,7 @@ class App extends Component {
   };
 
   render() {
+    const { showSubmitForm, deathsByDate, username, showReincarnatedUsers } = this.state;
     return (
       <div>
         <Header
@@ -69,7 +71,7 @@ class App extends Component {
           getCleanUsers={this.getCleanUsers}
         />
 
-        {this.state.showSubmitForm && (
+        {showSubmitForm && (
           <DateSubmitForm
             headerText="WHO ARE YOU?"
             inputOneText="What is your name?"
@@ -78,7 +80,12 @@ class App extends Component {
             showReincarnation={this.showReincarnation}
           />
         )}
-        {this.state.showReincarnatedUsers && (
+
+        {!showSubmitForm &&
+          <ReincarnationDisplay deathsByDate={deathsByDate} username={username} />
+        }
+          
+        {showReincarnatedUsers && (
           <CardContainer
             users={this.state.cleanUsers}
             handleClick={this.handleClick}

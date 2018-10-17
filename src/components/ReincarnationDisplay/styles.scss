@@ -2,9 +2,12 @@
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  height: 23em;
+
   justify-content: space-between;
+
+  height: 23em;
   width: 40%;
+  margin: auto;
 }
 
 .comment {
