@@ -17,6 +17,7 @@ class Header extends Component {
       default:
         return;
     }
+    await this.props.showReincarnatedUsers();
   };
 
   render() {
@@ -29,7 +30,6 @@ class Header extends Component {
             name="reincarnations"
             handleClick={this.handleClick}
           />
-          {/* <NavButton click={this.handleClick} buttonText="ADD A DEATH" /> */}
         </div>
       </nav>
     );

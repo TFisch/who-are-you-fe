@@ -25,31 +25,37 @@ class App extends Component {
       deathsByDate: {},
       showReincarnatedUsers: false,
       showReincarnation: false,
+      showReincarnationDisplay: false,
       cleanUsers: []
     }
   }
 
-  async componentDidMount() {
-    fetchDeaths();
-    const notes = 'Well hello there';
-    const name = 'Cody Taft';
-    const users = await fetchUsers();
-  }
+
 
   findDeathMatch = async (cleanedDate, year) => {
     const dateId = await fetchDateId(cleanedDate, year);
     const deathsByDate = await fetchDeathByDate(dateId, year);
-    await this.setState({ deathsByDate, showSubmitForm: false })
+    await this.setState({ deathsByDate, showReincarnationDisplay: true })
   }
 
-  hideForm = (cleanedDate, year, username) => {
-    this.setState({ username, showSubmitForm: false, showReincarnatedUsers: true });
+  hideForm = () => {
+    this.setState({ showSubmitForm: false });
+  }
+
+  handleDeathSubmit = (cleanedDate, year, username) => {
+    this.hideForm();
+    this.setState({ username });
     this.findDeathMatch(cleanedDate, year);
   }
 
-  showReincarnation = () => {
+  showReincarnatedUsers = () => {
     this.setState({ showReincarnation: true });
   };
+
+  showReincarnationDisplay = () => {
+    this.setState({ showReincarnationDisplay: true });
+  };
+
 
   getCleanUsers = async () => {
     const cleanUsers = await fetchUsers();
@@ -62,7 +68,7 @@ class App extends Component {
   };
 
   render() {
-    const { showSubmitForm, deathsByDate, username, showReincarnatedUsers } = this.state;
+    const { showSubmitForm, deathsByDate, username, showReincarnatedUsers, showReincarnationDisplay } = this.state;
     return (
       <div>
         <Header
@@ -76,22 +82,22 @@ class App extends Component {
             headerText="WHO ARE YOU?"
             inputOneText="What is your name?"
             inputTwoText="What is your birthday?"
-            hideForm={this.hideForm}
+            handleDeathSubmit={this.handleDeathSubmit}
             showReincarnation={this.showReincarnation}
           />
         )}
 
-        {!showSubmitForm &&
+        {showReincarnationDisplay &&
           <ReincarnationDisplay deathsByDate={deathsByDate} username={username} />
         }
-          
+
         {showReincarnatedUsers && (
           <CardContainer
             users={this.state.cleanUsers}
             handleClick={this.handleClick}
+            showReincarnatedUsers={this.showReincarnatedUsers}
           />
         )}
-        {this.state.showReincarnation && <ReincarnationDisplay />}
       </div>
     );
   }

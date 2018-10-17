@@ -100,7 +100,6 @@ export const userCleaner = async user => {
   };
   return await cleanUser;
 };
-}
 
 export const validateBirthday = (day, month, year) => {
   const parseDay = parseInt(day);

@@ -46,7 +46,7 @@ class DateSubmitForm extends Component {
       const monthString = getMonthString(month);
       const cleanedDate = concatDates(monthString, dayString);
       this.setState({ dateSubmitted: true });
-      this.props.hideForm(cleanedDate, year, this.state.nameInput);
+      this.props.handleDeathSubmit(cleanedDate, year, this.state.nameInput);
     }
   }
 
