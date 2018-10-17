@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import DateSubmitForm from '../common/DateSubmitForm';
-import Header from '../Header';
+import DateSubmitForm from '../common/DateSubmitForm'
+import Header from '../Header'
+import ReincarnationDisplay from '../ReincarnationDisplay'
 import './App.css';
 import {
   fetchDeaths,
@@ -14,7 +15,10 @@ import {
 
 class App extends Component {
   constructor() {
-    super();
+    super()
+    this.state = {
+      showSubmitForm: true,
+
   }
 
   async componentDidMount() {
@@ -33,15 +37,27 @@ class App extends Component {
     console.log(await updateUser(34, 'hi there'));
   }
 
+  hideForm = () => {
+    this.setState({ showSubmitForm: false })
+  }
+
   render() {
     return (
       <div>
         <Header />
-        <DateSubmitForm
-          headerText="Who Are You?"
-          inputOneText="what is your name?"
-          inputTwoText="what is your birthday?"
-        />
+
+        {this.state.showSubmitForm &&
+          <DateSubmitForm
+            headerText="WHO ARE YOU?"
+            inputOneText="What is your name?"
+            inputTwoText="What is your birthday?"
+            hideForm={this.hideForm}
+          />
+        }
+        {!this.state.showSubmitForm &&
+          <ReincarnationDisplay />
+        }
+
       </div>
     );
   }
