@@ -23,6 +23,10 @@ class DateSubmitForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    if (!this.state.date) {
+      this.setState({ dobError: "Please Enter a Valid Date of Birth!" })
+      return
+    }
     const date = this.state.dateInput;
     const day = date.substring(8, 10);
     const month = date.substring(5, 7);
