@@ -31,14 +31,16 @@ class App extends Component {
     const deathByDate = await fetchDeathByDate(dateId, 1989);
 
     const users = await fetchUsers();
-    console.log(users);
     const postedUser = await postUsers(name, deathByDate, notes);
     console.log(postedUser);
-    console.log(await deleteUsers(6));
-    console.log(await updateUser(34, 'hi there'));
   }
 
-  hideForm = () => {
+  findDeathMatch = async (cleanedDate, year) => {
+    const dateId = await fetchDateId(cleanedDate, year);
+  }
+
+  hideForm = (cleanedDate, year) => {
+    this.findDeathMatch(cleanedDate, year);
     this.setState({ showSubmitForm: false })
   }
 
