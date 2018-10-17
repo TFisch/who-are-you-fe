@@ -81,3 +81,15 @@ export const checkDay = (day) => {
   }
   return cleanDay;
 }
+
+export const validateBirthday = (day, month, year) => {
+  const parseDay = parseInt(day);
+  const parseMonth = parseInt(month);
+  const parseYear = parseInt(year);
+  const dateTotal = parseDay + parseMonth + parseYear;
+  if (dateTotal > 1972 && dateTotal < 2039) {
+    return true;
+  } else {
+    return "error";
+  }
+}
