@@ -7,7 +7,9 @@ import {
   fetchDateId,
   fetchUsers,
   fetchDeathByDate,
-  postUsers
+  postUsers,
+  deleteUsers,
+  updateUser
 } from '../../utilities/apiCalls';
 
 class App extends Component {
@@ -16,7 +18,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    // fetchDeaths();
+    fetchDeaths();
     const notes = 'Well hello there';
     const name = 'Cody Taft';
 
@@ -27,6 +29,8 @@ class App extends Component {
     console.log(users);
     const postedUser = await postUsers(name, deathByDate, notes);
     console.log(postedUser);
+    console.log(await deleteUsers(6));
+    console.log(await updateUser(34, 'hi there'));
   }
 
   render() {

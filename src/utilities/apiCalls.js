@@ -47,13 +47,24 @@ export const postUsers = async (name, death, notes) => {
   return await user;
 };
 
-// export const deleteUsers = async userId => {
-//   const url = process.env.REACT_APP_DATABASE_API_URL + `/api/v1/users/`;
-//   const response = await fetch(url, {
-//     method: 'DELETE',
-//     headers: 'application/json',
-//     body: JSON.stringify({
-//       id: userId
-//     })
-//   });
-// };
+export const deleteUsers = async userId => {
+  const url =
+    process.env.REACT_APP_DATABASE_API_URL + `/api/v1/users/${userId}`;
+  const response = await fetch(url, {
+    method: 'DELETE'
+  });
+  return await response.json();
+};
+
+export const updateUser = async (userId, notes) => {
+  const url =
+    process.env.REACT_APP_DATABASE_API_URL + `/api/v1/users/${userId}`;
+  const response = await fetch(url, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      notes
+    })
+  });
+  return await response.json();
+};
