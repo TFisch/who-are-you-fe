@@ -37,6 +37,8 @@ class App extends Component {
 
   findDeathMatch = async (cleanedDate, year) => {
     const dateId = await fetchDateId(cleanedDate, year);
+    const deathByDate = await fetchDeathByDate(dateId, year);
+    await console.log(deathByDate);
   }
 
   hideForm = (cleanedDate, year) => {
