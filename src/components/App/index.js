@@ -17,7 +17,9 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
+      username: '',
       showSubmitForm: true,
+      deathsByDate: {}
 
     }
   }
@@ -26,32 +28,28 @@ class App extends Component {
     fetchDeaths();
     const notes = 'Well hello there';
     const name = 'Cody Taft';
-
-    const dateId = await fetchDateId('FEBRUARY 17', 1989);
-    const deathByDate = await fetchDeathByDate(dateId, 1989);
-
     const users = await fetchUsers();
-    const postedUser = await postUsers(name, deathByDate, notes);
-    console.log(postedUser);
   }
 
   findDeathMatch = async (cleanedDate, year) => {
     const dateId = await fetchDateId(cleanedDate, year);
-    const deathByDate = await fetchDeathByDate(dateId, year);
-    await console.log(deathByDate);
+    const deathsByDate = await fetchDeathByDate(dateId, year);
+    await this.setState({ deathsByDate })
   }
 
-  hideForm = (cleanedDate, year) => {
+  hideForm = (cleanedDate, year, username) => {
+    this.setState({ username });
     this.findDeathMatch(cleanedDate, year);
     this.setState({ showSubmitForm: false })
   }
 
   render() {
+    const { showSubmitForm, deathsByDate, username } = this.state;
     return (
       <div>
         <Header />
 
-        {this.state.showSubmitForm &&
+        {showSubmitForm &&
           <DateSubmitForm
             headerText="WHO ARE YOU?"
             inputOneText="What is your name?"
@@ -59,8 +57,8 @@ class App extends Component {
             hideForm={this.hideForm}
           />
         }
-        {!this.state.showSubmitForm &&
-          <ReincarnationDisplay />
+        {!showSubmitForm &&
+          <ReincarnationDisplay deathsByDate={deathsByDate} username={username} />
         }
 
       </div>
