@@ -23,7 +23,7 @@ class DateSubmitForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    if (!this.state.date) {
+    if (!this.state.dateInput) {
       this.setState({ dobError: "Please Enter a Valid Date of Birth!" })
       return
     }
