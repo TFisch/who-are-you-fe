@@ -85,8 +85,9 @@ class App extends Component {
       <div>
         <Header
           hideForm={this.hideForm}
-          showReincarnatedUsers={this.showReincarnatedUsers}
+          showForm={this.showForm}
           getCleanUsers={this.getCleanUsers}
+          showReincarnatedUsers={this.showReincarnatedUsers}
         />
 
         {showSubmitForm && (
