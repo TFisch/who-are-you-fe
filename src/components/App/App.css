@@ -3,14 +3,18 @@ body {
   font-variant: small-caps;
   background: url("../../images/reincarnation.jpg") no-repeat center;
   background-size: cover;
-  height: -webkit-fill-available;
+  height: 100vh;
   width: 100%;
   margin: 0; }
-
 
 button:focus {
   outline: none;
   border: none; }
+
+h2 {
+  width: 12rem;
+  text-align: center;
+  text-overflow: ellipsis; }
 
 h3 {
   font-size: 1.5rem;
@@ -18,8 +22,9 @@ h3 {
 
 input {
   border-radius: 0.8rem;
+  font-family: 'Josefin Slab', serif;
   height: 2rem;
-  border: 0.2rem solid black;
+  border: 0.1rem solid black;
   width: 10rem;
   padding-left: 1rem;
   font-size: 1rem; }
@@ -27,3 +32,10 @@ input {
 input:focus {
   outline: none; }
 
+label {
+  width: auto;
+  margin: auto;
+  width: 12rem;
+  font-size: 1.5rem;
+  font-family: 'Josefin Slab', serif;
+  font-variant: small-caps; }
