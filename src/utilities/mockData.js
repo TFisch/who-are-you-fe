@@ -17,3 +17,13 @@ export const mockUsers = [{
   reincarnatedPerson: "Lefty Gomez",
   year: 1989
 }]
+
+export const mockUser = {
+  astrologySign: "Aquarius",
+  day: "FEBRUARY 17",
+  id: 6,
+  name: "Cody Taft",
+  notes: "Well hello there",
+  reincarnatedPerson: "Lefty Gomez",
+  year: 1989
+}
