@@ -35,6 +35,14 @@ class App extends Component {
     this.setState({ showSubmitForm: false });
   };
 
+  showForm = () => {
+    this.setState({
+      showSubmitForm: true,
+      showReincarnation: false,
+      showReincarnationDisplay: false
+    });
+  };
+
   handleDeathSubmit = (cleanedDate, year, username) => {
     this.hideForm();
     this.setState({ username });
@@ -42,12 +50,15 @@ class App extends Component {
   };
 
   showReincarnatedUsers = () => {
-    this.setState({ showReincarnatedUsers: true });
+    this.setState({
+      showReincarnatedUsers: true,
+      showReincarnationDisplay: false
+    });
   };
 
-  showReincarnationDisplay = () => {
-    this.setState({ showReincarnationDisplay: true });
-  };
+  // showReincarnationDisplay = () => {
+  //   this.setState({ showReincarnationDisplay: true });
+  // };
 
   getCleanUsers = async () => {
     const cleanUsers = await fetchUsers();
@@ -72,8 +83,9 @@ class App extends Component {
       <div>
         <Header
           hideForm={this.hideForm}
-          showReincarnatedUsers={this.showReincarnatedUsers}
+          showForm={this.showForm}
           getCleanUsers={this.getCleanUsers}
+          showReincarnatedUsers={this.showReincarnatedUsers}
         />
 
         {showSubmitForm && (
@@ -90,6 +102,9 @@ class App extends Component {
           <ReincarnationDisplay
             deathsByDate={deathsByDate}
             username={username}
+            tryAgain={this.showForm}
+            getCleanUsers={this.getCleanUsers}
+            showReincarnatedUsers={this.showReincarnatedUsers}
           />
         )}
 

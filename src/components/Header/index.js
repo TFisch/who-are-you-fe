@@ -12,18 +12,24 @@ class Header extends Component {
     switch (buttonName) {
       case 'REINCARNATIONS':
         await this.props.hideForm();
-        await this.props.showReincarnatedUsers();
         await this.props.getCleanUsers();
+        await this.props.showReincarnatedUsers();
         break;
       default:
         return;
     }
   };
 
+  handleTitleClick = e => {
+    this.props.showForm();
+  };
+
   render() {
     return (
       <nav className="header">
-        <h1 className="header-title">Who Were You?</h1>
+        <h1 className="header-title" onClick={this.handleTitleClick}>
+          Who Were You?
+        </h1>
         <div className="button-wrap">
           <NavButton
             buttonText="REINCARNATIONS"
