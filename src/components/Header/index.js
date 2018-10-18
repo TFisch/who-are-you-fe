@@ -12,8 +12,8 @@ class Header extends Component {
     switch (buttonName) {
       case 'REINCARNATIONS':
         await this.props.hideForm();
-        await this.props.showReincarnatedUsers();
         await this.props.getCleanUsers();
+        await this.props.showReincarnatedUsers();
         break;
       default:
         return;
@@ -21,8 +21,7 @@ class Header extends Component {
   };
 
   handleTitleClick = e => {
-    this.props.hideForm();
-    this.props.showReincarnatedUsers();
+    this.props.showForm();
   };
 
   render() {
