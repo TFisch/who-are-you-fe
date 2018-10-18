@@ -34,6 +34,9 @@ ShallowWrapper {
           onChange={[Function]}
           type="text"
         />,
+        <p>
+          
+        </p>,
         <h3 />,
         <input
           max="2004-12-31"
@@ -42,6 +45,9 @@ ShallowWrapper {
           onChange={[Function]}
           type="date"
         />,
+        <p>
+          
+        </p>,
         <Submit
           buttonText="SUBMIT"
           handleSubmit={[Function]}
@@ -92,6 +98,17 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": "",
+        },
+        "ref": null,
+        "rendered": "",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": undefined,
         },
         "ref": null,
@@ -113,6 +130,17 @@ ShallowWrapper {
         "ref": null,
         "rendered": null,
         "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "",
+        },
+        "ref": null,
+        "rendered": "",
+        "type": "p",
       },
       Object {
         "instance": null,
@@ -143,6 +171,9 @@ ShallowWrapper {
             onChange={[Function]}
             type="text"
           />,
+          <p>
+            
+          </p>,
           <h3 />,
           <input
             max="2004-12-31"
@@ -151,6 +182,9 @@ ShallowWrapper {
             onChange={[Function]}
             type="date"
           />,
+          <p>
+            
+          </p>,
           <Submit
             buttonText="SUBMIT"
             handleSubmit={[Function]}
@@ -201,6 +235,17 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "",
+          },
+          "ref": null,
+          "rendered": "",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": undefined,
           },
           "ref": null,
@@ -222,6 +267,17 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "",
+          },
+          "ref": null,
+          "rendered": "",
+          "type": "p",
         },
         Object {
           "instance": null,

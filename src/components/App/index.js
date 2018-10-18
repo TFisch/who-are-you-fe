@@ -5,16 +5,11 @@ import ReincarnationDisplay from '../ReincarnationDisplay';
 import CardContainer from '../common/CardContainer';
 import './App.css';
 import {
-  fetchDeaths,
   fetchDateId,
   fetchUsers,
   fetchDeathByDate,
-  postUsers,
-  deleteUsers,
-  updateUser,
   deleteUser
 } from '../../utilities/apiCalls';
-import { userCleaner } from '../../utilities/helper';
 
 class App extends Component {
   constructor() {

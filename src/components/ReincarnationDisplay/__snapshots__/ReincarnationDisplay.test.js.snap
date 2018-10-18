@@ -41,6 +41,19 @@ ShallowWrapper {
         "useRealTimers": [Function],
       }
     }
+    deathsByDate={
+      Array [
+        Object {
+          "created_at": "2018-10-13T00:30:37.227Z",
+          "date_id": 414,
+          "deletable": false,
+          "id": 1362,
+          "person_name": "Lefty Gomez",
+          "updated_at": "2018-10-13T00:30:37.227Z",
+          "year": 1989,
+        },
+      ]
+    }
     handleSubmit={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -58,7 +71,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h2>
-          Name! You Were DEAD PERSON in Your Past Life!
+          ! You Were 
+          414
+           In Your Past Life!
         </h2>,
         <div
           className="comment-wrapper"
@@ -72,6 +87,8 @@ ShallowWrapper {
             <textarea
               className="comment"
               name="comment"
+              onChange={[Function]}
+              value=""
             />
             <Submit
               buttonText="SAVE"
@@ -89,10 +106,20 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Name! You Were DEAD PERSON in Your Past Life!",
+          "children": Array [
+            undefined,
+            "! You Were ",
+            414,
+            " In Your Past Life!",
+          ],
         },
         "ref": null,
-        "rendered": "Name! You Were DEAD PERSON in Your Past Life!",
+        "rendered": Array [
+          undefined,
+          "! You Were ",
+          414,
+          " In Your Past Life!",
+        ],
         "type": "h2",
       },
       Object {
@@ -110,6 +137,8 @@ ShallowWrapper {
               <textarea
                 className="comment"
                 name="comment"
+                onChange={[Function]}
+                value=""
               />
               <Submit
                 buttonText="SAVE"
@@ -141,6 +170,8 @@ ShallowWrapper {
                 <textarea
                   className="comment"
                   name="comment"
+                  onChange={[Function]}
+                  value=""
                 />,
                 <Submit
                   buttonText="SAVE"
@@ -158,6 +189,8 @@ ShallowWrapper {
                 "props": Object {
                   "className": "comment",
                   "name": "comment",
+                  "onChange": [Function],
+                  "value": "",
                 },
                 "ref": null,
                 "rendered": null,
@@ -192,7 +225,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2>
-            Name! You Were DEAD PERSON in Your Past Life!
+            ! You Were 
+            414
+             In Your Past Life!
           </h2>,
           <div
             className="comment-wrapper"
@@ -206,6 +241,8 @@ ShallowWrapper {
               <textarea
                 className="comment"
                 name="comment"
+                onChange={[Function]}
+                value=""
               />
               <Submit
                 buttonText="SAVE"
@@ -223,10 +260,20 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Name! You Were DEAD PERSON in Your Past Life!",
+            "children": Array [
+              undefined,
+              "! You Were ",
+              414,
+              " In Your Past Life!",
+            ],
           },
           "ref": null,
-          "rendered": "Name! You Were DEAD PERSON in Your Past Life!",
+          "rendered": Array [
+            undefined,
+            "! You Were ",
+            414,
+            " In Your Past Life!",
+          ],
           "type": "h2",
         },
         Object {
@@ -244,6 +291,8 @@ ShallowWrapper {
                 <textarea
                   className="comment"
                   name="comment"
+                  onChange={[Function]}
+                  value=""
                 />
                 <Submit
                   buttonText="SAVE"
@@ -275,6 +324,8 @@ ShallowWrapper {
                   <textarea
                     className="comment"
                     name="comment"
+                    onChange={[Function]}
+                    value=""
                   />,
                   <Submit
                     buttonText="SAVE"
@@ -292,6 +343,8 @@ ShallowWrapper {
                   "props": Object {
                     "className": "comment",
                     "name": "comment",
+                    "onChange": [Function],
+                    "value": "",
                   },
                   "ref": null,
                   "rendered": null,

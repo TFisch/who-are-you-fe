@@ -18,6 +18,7 @@ class DateSubmitForm extends Component {
       dobError: '',
       nameError: ''
     };
+
   }
 
   handleChange = e => {
@@ -54,6 +55,7 @@ class DateSubmitForm extends Component {
       this.props.handleDeathSubmit(cleanedDate, year, this.state.nameInput);
     }
   };
+
 
   render() {
     return (
