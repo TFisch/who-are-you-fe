@@ -2,7 +2,7 @@ import React from 'react';
 import ReincarnatedUser from '../../ReincarnatedUser';
 import './styles.css';
 
-const CardContainer = ({ users, handleClick }) => {
+const CardContainer = ({ users, handleClick, submitNotes }) => {
   const displayUsers = users.map(user => {
     return <ReincarnatedUser user={user} handleClick={handleClick} />;
   });
