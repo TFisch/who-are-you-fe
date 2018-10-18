@@ -1,0 +1,288 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReincarnatedUser should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ReincarnatedUser
+    user={
+      Object {
+        "astrologySign": "Aquarius",
+        "day": "FEBRUARY 17",
+        "id": 6,
+        "name": "Cody Taft",
+        "notes": "Well hello there",
+        "reincarnatedPerson": "Lefty Gomez",
+        "year": 1989,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3
+          className="user-name"
+        >
+          Cody Taft
+        </h3>,
+        <h3
+          className="reincarnated-person"
+        >
+          Lefty Gomez
+        </h3>,
+        <p
+          className="day"
+        >
+          FEBRUARY 17
+        </p>,
+        <p
+          className="year"
+        >
+          1989
+        </p>,
+        <p
+          className="astrology-sign"
+        >
+          Aquarius
+        </p>,
+        <button
+          className="user-delete-button"
+          id={6}
+        >
+          Delete User
+        </button>,
+      ],
+      "className": "reincarnated-user",
+      "id": 6,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Cody Taft",
+          "className": "user-name",
+        },
+        "ref": null,
+        "rendered": "Cody Taft",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Lefty Gomez",
+          "className": "reincarnated-person",
+        },
+        "ref": null,
+        "rendered": "Lefty Gomez",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "FEBRUARY 17",
+          "className": "day",
+        },
+        "ref": null,
+        "rendered": "FEBRUARY 17",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": 1989,
+          "className": "year",
+        },
+        "ref": null,
+        "rendered": 1989,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Aquarius",
+          "className": "astrology-sign",
+        },
+        "ref": null,
+        "rendered": "Aquarius",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Delete User",
+          "className": "user-delete-button",
+          "id": 6,
+          "onClick": undefined,
+        },
+        "ref": null,
+        "rendered": "Delete User",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3
+            className="user-name"
+          >
+            Cody Taft
+          </h3>,
+          <h3
+            className="reincarnated-person"
+          >
+            Lefty Gomez
+          </h3>,
+          <p
+            className="day"
+          >
+            FEBRUARY 17
+          </p>,
+          <p
+            className="year"
+          >
+            1989
+          </p>,
+          <p
+            className="astrology-sign"
+          >
+            Aquarius
+          </p>,
+          <button
+            className="user-delete-button"
+            id={6}
+          >
+            Delete User
+          </button>,
+        ],
+        "className": "reincarnated-user",
+        "id": 6,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Cody Taft",
+            "className": "user-name",
+          },
+          "ref": null,
+          "rendered": "Cody Taft",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Lefty Gomez",
+            "className": "reincarnated-person",
+          },
+          "ref": null,
+          "rendered": "Lefty Gomez",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "FEBRUARY 17",
+            "className": "day",
+          },
+          "ref": null,
+          "rendered": "FEBRUARY 17",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": 1989,
+            "className": "year",
+          },
+          "ref": null,
+          "rendered": 1989,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Aquarius",
+            "className": "astrology-sign",
+          },
+          "ref": null,
+          "rendered": "Aquarius",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Delete User",
+            "className": "user-delete-button",
+            "id": 6,
+            "onClick": undefined,
+          },
+          "ref": null,
+          "rendered": "Delete User",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
