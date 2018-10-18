@@ -5,7 +5,7 @@
   justify-content: space-between;
   height: 23em;
   width: 40%;
-  margin: auto; }
+  margin: 2rem auto auto auto; }
 
 .comment {
   height: 5em;
@@ -20,3 +20,6 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 2em; }
+
+.past-life-message {
+  text-align: center; }

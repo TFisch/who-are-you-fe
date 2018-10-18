@@ -2,12 +2,10 @@
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-
   justify-content: space-between;
-
   height: 23em;
   width: 40%;
-  margin: auto;
+  margin: 2rem auto auto auto;
 }
 
 .comment {
@@ -25,4 +23,8 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 2em;
+}
+
+.past-life-message {
+  text-align: center;
 }

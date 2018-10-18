@@ -21,7 +21,6 @@ class Header extends Component {
   };
 
   handleTitleClick = e => {
-    console.log(e.target);
     this.props.hideForm();
     this.props.showReincarnatedUsers();
   };

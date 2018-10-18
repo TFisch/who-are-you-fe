@@ -40,6 +40,14 @@ class App extends Component {
     this.setState({ showSubmitForm: false });
   };
 
+  showForm = () => {
+    this.setState({
+      showSubmitForm: true,
+      showReincarnation: false,
+      showReincarnationDisplay: false
+    });
+  };
+
   handleDeathSubmit = (cleanedDate, year, username) => {
     this.hideForm();
     this.setState({ username });
@@ -50,9 +58,9 @@ class App extends Component {
     this.setState({ showReincarnatedUsers: true });
   };
 
-  showReincarnationDisplay = () => {
-    this.setState({ showReincarnationDisplay: true });
-  };
+  // showReincarnationDisplay = () => {
+  //   this.setState({ showReincarnationDisplay: true });
+  // };
 
   getCleanUsers = async () => {
     const cleanUsers = await fetchUsers();
@@ -95,6 +103,7 @@ class App extends Component {
           <ReincarnationDisplay
             deathsByDate={deathsByDate}
             username={username}
+            tryAgain={this.showForm}
           />
         )}
 
