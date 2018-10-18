@@ -10,7 +10,12 @@
 
 .header-title {
   text-align: center;
-  display: flex;
   font-size: 1.5em;
   justify-content: space-between;
+  width: auto;
+  float: left;
+}
+
+.header-title:hover {
+  cursor: pointer;
 }
