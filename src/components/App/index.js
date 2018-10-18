@@ -40,6 +40,7 @@ class App extends Component {
     this.setState({
       showSubmitForm: true,
       showReincarnation: false,
+      showReincarnatedUsers: false,
       showReincarnationDisplay: false
     });
   };

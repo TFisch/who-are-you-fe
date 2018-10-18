@@ -20,10 +20,14 @@ class ReincarnationDisplay extends Component {
     this.setState({ notes: e.target.value });
   };
 
-  handleSubmit = e => {
-    postUsers(this.props.username, this.props.deathsByDate, this.state.notes);
-    this.props.getCleanUsers();
-    this.props.showReincarnatedUsers();
+  handleSubmit = async e => {
+    await postUsers(
+      this.props.username,
+      this.props.deathsByDate,
+      this.state.notes
+    );
+    await this.props.getCleanUsers();
+    await this.props.showReincarnatedUsers();
     this.setState({ notes: '' });
   };
 
@@ -41,7 +45,7 @@ class ReincarnationDisplay extends Component {
             in your past life!
           </h2>
           <div className="comment-wrapper">
-            <label>Leave a comment:</label>
+            <label>leave a comment:</label>
             <div className="bottom-wrapper">
               <textarea
                 className="comment"

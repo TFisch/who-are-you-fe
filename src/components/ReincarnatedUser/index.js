@@ -5,11 +5,11 @@ const ReincarnatedUser = ({ user, handleClick, submitNotes }) => {
   return (
     <div className="reincarnated-user" id={user.id}>
       <div className="user-details">
-        <h3 className="user-name">{user.name}</h3>
-        <h3 className="reincarnated-person">{user.reincarnatedPerson}</h3>
-        <p className="day">{user.day}</p>
-        <p className="year">{user.year}</p>
-        <p className="astrology-sign">{user.astrologySign}</p>
+        <h2 className="user-name">{user.name}</h2>
+        <h2 className="reincarnated-person">{user.reincarnatedPerson}</h2>
+        <h2 className="day">{user.day}</h2>
+        <h2 className="year">{user.year}</h2>
+        <h2 className="astrology-sign">{user.astrologySign}</h2>
         <button
           className="user-delete-button"
           onClick={handleClick}

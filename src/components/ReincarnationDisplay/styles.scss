@@ -6,21 +6,26 @@
   height: 23em;
   width: 40%;
   margin: 2rem auto auto auto;
+  background-color: rgba(235, 244, 244, 0.8);
+  border-radius: 19rem;
 }
 
 .comment {
-  height: 5em;
-  width: 40%;
+  height: 6rem;
+  width: 17rem;
 }
 
 .comment-wrapper {
   margin-left: 1em;
   margin-right: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 .bottom-wrapper {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding-bottom: 2em;
 }
@@ -28,9 +33,27 @@
 .past-life-message {
   text-align: center;
   margin: auto;
+  width: auto;
 }
 
 .no-reincarnation {
   text-align: center;
   margin: auto;
+}
+
+.submit-button {
+  border-radius: 0.7rem;
+  height: 2rem;
+  align-content: center;
+  align-items: center;
+  margin: 1rem auto 0 auto;
+  width: 7rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 0.05rem solid black;
+}
+
+.submit-button:hover {
+  color: rgb(216, 161, 175);
+  background-color: rgb(59, 25, 32);
 }
