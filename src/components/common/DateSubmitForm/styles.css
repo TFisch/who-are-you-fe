@@ -1,8 +1,16 @@
 .date-submit-form {
   align-items: center;
   border: 1px solid black;
+  border-radius: 19rem;
   display: flex;
   flex-direction: column;
-  height: 23em;
+  height: 25em;
   width: 40%;
-  margin: auto; }
+  margin: 5rem auto auto auto;
+  background-color: rgba(235, 244, 244, 0.8); }
+
+.form-title {
+  margin-top: 2.5rem; }
+
+.error {
+  color: crimson; }

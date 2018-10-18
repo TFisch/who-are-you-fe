@@ -4,7 +4,9 @@
   padding-top: 2em; }
 
 .header {
-  border-bottom: 2px solid lime; }
+  background-color: rgba(235, 244, 244, 0.8);
+  border-bottom: 2px solid black;
+  width: 100%; }
 
 .header-title {
   text-align: center;
@@ -14,4 +16,5 @@
   float: left; }
 
 .header-title:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  color: pink; }

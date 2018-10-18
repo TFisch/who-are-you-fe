@@ -1,9 +1,27 @@
 body {
   font-family: 'Josefin Slab', serif;
   font-variant: small-caps;
-}
+  background: url("../../images/reincarnation.jpg") no-repeat center;
+  background-size: cover;
+  height: -webkit-fill-available;
+  width: 100%;
+  margin: 0; }
 
 button:focus {
   outline: none;
-  border: none;
-}
+  border: none; }
+
+h3 {
+  font-size: 1.5rem;
+  margin: 1rem auto; }
+
+input {
+  border-radius: 0.8rem;
+  height: 2rem;
+  border: 0.2rem solid black;
+  width: 10rem;
+  padding-left: 1rem;
+  font-size: 1rem; }
+
+input:focus {
+  outline: none; }

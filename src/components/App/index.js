@@ -98,8 +98,8 @@ class App extends Component {
         {showSubmitForm && (
           <DateSubmitForm
             headerText="WHO ARE YOU?"
-            inputOneText="What is your name?"
-            inputTwoText="What is your birthday?"
+            inputOneText="what is your name?"
+            inputTwoText="what is your birthday?"
             handleDeathSubmit={this.handleDeathSubmit}
             showReincarnation={this.showReincarnation}
           />
