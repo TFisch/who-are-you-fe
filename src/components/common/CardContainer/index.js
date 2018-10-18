@@ -15,12 +15,12 @@ const CardContainer = ({ users, handleClick, submitNotes }) => {
   return (
     <div className="card-container">
       <div className="table-headers">
-        <h3 className="user-name">User Name</h3>
-        <h3 className="reincarnated-person">Reincarnated As</h3>
-        <p className="day">Birthday</p>
-        <p className="year">Year Born</p>
-        <p className="astrology-sign">Astrological Sign</p>
-        <p className="delete-title">Delete?</p>
+        <h2 className="user-name">User Name</h2>
+        <h2 className="reincarnated-person">Reincarnated As</h2>
+        <h2 className="day">Birthday</h2>
+        <h2 className="year">Year Born</h2>
+        <h2 className="astrology-sign">Astrological Sign</h2>
+        <h2 className="delete-title">Delete?</h2>
       </div>
       {displayUsers}
     </div>
