@@ -41,6 +41,9 @@
   justify-content: center;
   margin-right: 2rem; }
 
+.user-notes:focus {
+  outline: none; }
+
 .submit-notes {
   border-radius: 10%;
   height: 2rem;
