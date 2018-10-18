@@ -31,6 +31,11 @@
   margin: auto;
   width: auto; }
 
+.no-past-message {
+  text-align: center;
+  margin: auto;
+  width: auto; }
+
 .no-reincarnation {
   text-align: center;
   margin: auto; }
@@ -47,5 +52,20 @@
   border: 0.05rem solid black; }
 
 .submit-button:hover {
+  color: #d8a1af;
+  background-color: #3b1920; }
+
+.try-again-btn {
+  border-radius: 0.7rem;
+  height: 2rem;
+  align-content: center;
+  align-items: center;
+  margin: 1rem auto auto;
+  width: 7rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 0.05rem solid black; }
+
+.try-again-btn:hover {
   color: #d8a1af;
   background-color: #3b1920; }
