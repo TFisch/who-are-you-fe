@@ -25,6 +25,7 @@ ShallowWrapper {
     "props": Object {
       "children": <h3 />,
       "className": "nav-button",
+      "onClick": undefined,
     },
     "ref": null,
     "rendered": Object {
@@ -48,6 +49,7 @@ ShallowWrapper {
       "props": Object {
         "children": <h3 />,
         "className": "nav-button",
+        "onClick": undefined,
       },
       "ref": null,
       "rendered": Object {
