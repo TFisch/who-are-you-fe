@@ -1,29 +1,33 @@
 .table-headers {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: auto 4rem;
+  justify-content: space-around;
+  margin: 3rem 4rem auto 4rem;
   text-align: left;
   align-content: center;
   align-items: center;
-  border-bottom: 0.1rem solid black;
+  border: 0.1rem solid black;
+  background-color: rgba(200, 244, 244, 0.8);
 }
 
 .reincarnated-user {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto 4rem;
   text-align: left;
   align-content: center;
   align-items: center;
   border-bottom: 0.1rem solid black;
+  border-right: 0.1rem solid black;
+  border-left: 0.1rem solid black;
+  background-color: rgba(235, 244, 244, 0.8);
 }
 
 .user-details {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto 4rem;
   text-align: left;
   align-content: center;
@@ -32,11 +36,20 @@
 }
 
 .user-delete-button {
-  border-radius: 10%;
+  border-radius: 0.7rem;
   height: 2rem;
   align-content: center;
   align-items: center;
-  margin: auto 0;
+  margin: auto 3rem;
+  width: 6rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 0.05rem solid;
+}
+
+.user-delete-button:hover {
+  color: rgb(216, 161, 175);
+  background-color: rgb(59, 25, 32);
 }
 
 .user-notes {
@@ -51,9 +64,18 @@
 }
 
 .submit-notes {
-  border-radius: 10%;
+  border-radius: 0.7rem;
   height: 2rem;
   align-content: center;
   align-items: center;
-  margin: auto auto;
+  margin: auto;
+  width: 7rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 0.05rem solid;
+}
+
+.submit-notes:hover {
+  color: rgb(216, 161, 175);
+  background-color: rgb(59, 25, 32);
 }
