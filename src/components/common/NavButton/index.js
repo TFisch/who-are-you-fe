@@ -4,7 +4,7 @@ import './styles.css';
 const NavButton = ({ buttonText, handleClick }) => {
   return (
     <button className="nav-button" onClick={handleClick}>
-      <h3>{buttonText}</h3>
+      <h3 className="button-text">{buttonText}</h3>
     </button>
   );
 };

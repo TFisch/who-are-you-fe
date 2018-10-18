@@ -5,7 +5,9 @@
 }
 
 .header {
-  border-bottom: 2px solid lime;
+  background-color: rgba(235, 244, 244, 0.8);
+  border-bottom: 2px solid black;
+  width: 100%;
 }
 
 .header-title {
@@ -18,4 +20,5 @@
 
 .header-title:hover {
   cursor: pointer;
+  color: pink;
 }

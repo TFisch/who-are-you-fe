@@ -56,10 +56,6 @@ class App extends Component {
     });
   };
 
-  // showReincarnationDisplay = () => {
-  //   this.setState({ showReincarnationDisplay: true });
-  // };
-
   getCleanUsers = async () => {
     const cleanUsers = await fetchUsers();
     this.setState({ cleanUsers });
@@ -68,7 +64,13 @@ class App extends Component {
 
   handleClick = async e => {
     deleteUser(e.target.id);
-    e.target.parentNode.remove();
+    e.target.parentNode.parentNode.remove();
+  };
+
+  submitNotes = async e => {
+    const note = e.target.previousSibling.innerText;
+    const userId = e.target.parentNode.parentNode.id;
+    updateUser(userId, note);
   };
 
   render() {
@@ -91,8 +93,8 @@ class App extends Component {
         {showSubmitForm && (
           <DateSubmitForm
             headerText="WHO ARE YOU?"
-            inputOneText="What is your name?"
-            inputTwoText="What is your birthday?"
+            inputOneText="what is your name?"
+            inputTwoText="what is your birthday?"
             handleDeathSubmit={this.handleDeathSubmit}
             showReincarnation={this.showReincarnation}
           />
@@ -113,6 +115,7 @@ class App extends Component {
             users={this.state.cleanUsers}
             handleClick={this.handleClick}
             showReincarnatedUsers={this.showReincarnatedUsers}
+            submitNotes={this.submitNotes}
           />
         )}
       </div>

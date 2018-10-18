@@ -56,7 +56,7 @@ class ReincarnationDisplay extends Component {
       );
     } else {
       return (
-        <article className="reincarnation-display">
+        <article className="reincarnation-display no-reincarnation">
           <h2>Sorry no soul wanted to embody your body...</h2>
           <button onClick={this.props.tryAgain}>Try Again?</button>
         </article>
