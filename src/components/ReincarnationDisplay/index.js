@@ -31,8 +31,13 @@ class ReincarnationDisplay extends Component {
       var name = Object.values(this.props.deathsByDate[0]);
       return (
         <article className="reincarnation-display">
-          <h2>
-            {this.props.username}! You Were {name[1]} In Your Past Life!
+          <h2 className="past-life-message">
+            {this.props.username.toUpperCase()}!<br />
+            you were
+            <br />
+            {name[1].toUpperCase()}
+            <br />
+            in your past life!
           </h2>
           <div className="comment-wrapper">
             <label>Leave a comment:</label>
