@@ -8,7 +8,8 @@ import {
   fetchDateId,
   fetchUsers,
   fetchDeathByDate,
-  deleteUser
+  deleteUser,
+  updateUser
 } from '../../utilities/apiCalls';
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
     this.setState({
       showSubmitForm: true,
       showReincarnation: false,
+      showReincarnatedUsers: false,
       showReincarnationDisplay: false
     });
   };
