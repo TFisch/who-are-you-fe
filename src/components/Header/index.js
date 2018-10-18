@@ -20,10 +20,18 @@ class Header extends Component {
     }
   };
 
+  handleTitleClick = e => {
+    console.log(e.target);
+    this.props.hideForm();
+    this.props.showReincarnatedUsers();
+  };
+
   render() {
     return (
       <nav className="header">
-        <h1 className="header-title">Who Were You?</h1>
+        <h1 className="header-title" onClick={this.handleTitleClick}>
+          Who Were You?
+        </h1>
         <div className="button-wrap">
           <NavButton
             buttonText="REINCARNATIONS"
