@@ -8,7 +8,8 @@ import {
   fetchDateId,
   fetchUsers,
   fetchDeathByDate,
-  deleteUser
+  deleteUser,
+  updateUser
 } from '../../utilities/apiCalls';
 
 class App extends Component {
