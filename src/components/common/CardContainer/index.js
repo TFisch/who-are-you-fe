@@ -4,7 +4,13 @@ import './styles.css';
 
 const CardContainer = ({ users, handleClick, submitNotes }) => {
   const displayUsers = users.map(user => {
-    return <ReincarnatedUser user={user} handleClick={handleClick} />;
+    return (
+      <ReincarnatedUser
+        user={user}
+        handleClick={handleClick}
+        submitNotes={submitNotes}
+      />
+    );
   });
   return (
     <div className="card-container">
