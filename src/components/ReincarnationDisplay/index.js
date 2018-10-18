@@ -22,6 +22,8 @@ class ReincarnationDisplay extends Component {
 
   handleSubmit = e => {
     postUsers(this.props.username, this.props.deathsByDate, this.state.notes);
+    this.props.getCleanUsers();
+    this.props.showReincarnatedUsers();
     this.setState({ notes: '' });
   };
 

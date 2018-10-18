@@ -55,7 +55,10 @@ class App extends Component {
   };
 
   showReincarnatedUsers = () => {
-    this.setState({ showReincarnatedUsers: true });
+    this.setState({
+      showReincarnatedUsers: true,
+      showReincarnationDisplay: false
+    });
   };
 
   // showReincarnationDisplay = () => {
@@ -105,6 +108,8 @@ class App extends Component {
             deathsByDate={deathsByDate}
             username={username}
             tryAgain={this.showForm}
+            getCleanUsers={this.getCleanUsers}
+            showReincarnatedUsers={this.showReincarnatedUsers}
           />
         )}
 
