@@ -1,0 +1,895 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    users={
+      Array [
+        Object {
+          "astrologySign": "Aquarius",
+          "day": "FEBRUARY 17",
+          "id": 6,
+          "name": "Cody Taft",
+          "notes": "Well hello there",
+          "reincarnatedPerson": "Lefty Gomez",
+          "year": 1989,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="table-headers"
+        >
+          <h3
+            className="user-name"
+          >
+            User Name
+          </h3>
+          <h3
+            className="reincarnated-person"
+          >
+            Reincarnated As
+          </h3>
+          <p
+            className="day"
+          >
+            Birthday
+          </p>
+          <p
+            className="year"
+          >
+            Year Born
+          </p>
+          <p
+            className="astrology-sign"
+          >
+            Astrological Sign
+          </p>
+          <p
+            className="delete-title"
+          >
+            Delete?
+          </p>
+        </div>,
+        Array [
+          <ReincarnatedUser
+            user={
+              Object {
+                "astrologySign": "Aquarius",
+                "day": "FEBRUARY 17",
+                "id": 6,
+                "name": "Cody Taft",
+                "notes": "Well hello there",
+                "reincarnatedPerson": "Lefty Gomez",
+                "year": 1989,
+              }
+            }
+          />,
+        ],
+      ],
+      "className": "card-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3
+              className="user-name"
+            >
+              User Name
+            </h3>,
+            <h3
+              className="reincarnated-person"
+            >
+              Reincarnated As
+            </h3>,
+            <p
+              className="day"
+            >
+              Birthday
+            </p>,
+            <p
+              className="year"
+            >
+              Year Born
+            </p>,
+            <p
+              className="astrology-sign"
+            >
+              Astrological Sign
+            </p>,
+            <p
+              className="delete-title"
+            >
+              Delete?
+            </p>,
+          ],
+          "className": "table-headers",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "User Name",
+              "className": "user-name",
+            },
+            "ref": null,
+            "rendered": "User Name",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Reincarnated As",
+              "className": "reincarnated-person",
+            },
+            "ref": null,
+            "rendered": "Reincarnated As",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Birthday",
+              "className": "day",
+            },
+            "ref": null,
+            "rendered": "Birthday",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Year Born",
+              "className": "year",
+            },
+            "ref": null,
+            "rendered": "Year Born",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Astrological Sign",
+              "className": "astrology-sign",
+            },
+            "ref": null,
+            "rendered": "Astrological Sign",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Delete?",
+              "className": "delete-title",
+            },
+            "ref": null,
+            "rendered": "Delete?",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "handleClick": undefined,
+          "user": Object {
+            "astrologySign": "Aquarius",
+            "day": "FEBRUARY 17",
+            "id": 6,
+            "name": "Cody Taft",
+            "notes": "Well hello there",
+            "reincarnatedPerson": "Lefty Gomez",
+            "year": 1989,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="table-headers"
+          >
+            <h3
+              className="user-name"
+            >
+              User Name
+            </h3>
+            <h3
+              className="reincarnated-person"
+            >
+              Reincarnated As
+            </h3>
+            <p
+              className="day"
+            >
+              Birthday
+            </p>
+            <p
+              className="year"
+            >
+              Year Born
+            </p>
+            <p
+              className="astrology-sign"
+            >
+              Astrological Sign
+            </p>
+            <p
+              className="delete-title"
+            >
+              Delete?
+            </p>
+          </div>,
+          Array [
+            <ReincarnatedUser
+              user={
+                Object {
+                  "astrologySign": "Aquarius",
+                  "day": "FEBRUARY 17",
+                  "id": 6,
+                  "name": "Cody Taft",
+                  "notes": "Well hello there",
+                  "reincarnatedPerson": "Lefty Gomez",
+                  "year": 1989,
+                }
+              }
+            />,
+          ],
+        ],
+        "className": "card-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3
+                className="user-name"
+              >
+                User Name
+              </h3>,
+              <h3
+                className="reincarnated-person"
+              >
+                Reincarnated As
+              </h3>,
+              <p
+                className="day"
+              >
+                Birthday
+              </p>,
+              <p
+                className="year"
+              >
+                Year Born
+              </p>,
+              <p
+                className="astrology-sign"
+              >
+                Astrological Sign
+              </p>,
+              <p
+                className="delete-title"
+              >
+                Delete?
+              </p>,
+            ],
+            "className": "table-headers",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "User Name",
+                "className": "user-name",
+              },
+              "ref": null,
+              "rendered": "User Name",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Reincarnated As",
+                "className": "reincarnated-person",
+              },
+              "ref": null,
+              "rendered": "Reincarnated As",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Birthday",
+                "className": "day",
+              },
+              "ref": null,
+              "rendered": "Birthday",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Year Born",
+                "className": "year",
+              },
+              "ref": null,
+              "rendered": "Year Born",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Astrological Sign",
+                "className": "astrology-sign",
+              },
+              "ref": null,
+              "rendered": "Astrological Sign",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Delete?",
+                "className": "delete-title",
+              },
+              "ref": null,
+              "rendered": "Delete?",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleClick": undefined,
+            "user": Object {
+              "astrologySign": "Aquarius",
+              "day": "FEBRUARY 17",
+              "id": 6,
+              "name": "Cody Taft",
+              "notes": "Well hello there",
+              "reincarnatedPerson": "Lefty Gomez",
+              "year": 1989,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`CardContainer should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    users={
+      Array [
+        Object {
+          "astrologySign": "Aquarius",
+          "day": "FEBRUARY 17",
+          "id": 6,
+          "name": "Cody Taft",
+          "notes": "Well hello there",
+          "reincarnatedPerson": "Lefty Gomez",
+          "year": 1989,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="table-headers"
+        >
+          <h3
+            className="user-name"
+          >
+            User Name
+          </h3>
+          <h3
+            className="reincarnated-person"
+          >
+            Reincarnated As
+          </h3>
+          <p
+            className="day"
+          >
+            Birthday
+          </p>
+          <p
+            className="year"
+          >
+            Year Born
+          </p>
+          <p
+            className="astrology-sign"
+          >
+            Astrological Sign
+          </p>
+          <p
+            className="delete-title"
+          >
+            Delete?
+          </p>
+        </div>,
+        Array [
+          <ReincarnatedUser
+            user={
+              Object {
+                "astrologySign": "Aquarius",
+                "day": "FEBRUARY 17",
+                "id": 6,
+                "name": "Cody Taft",
+                "notes": "Well hello there",
+                "reincarnatedPerson": "Lefty Gomez",
+                "year": 1989,
+              }
+            }
+          />,
+        ],
+      ],
+      "className": "card-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3
+              className="user-name"
+            >
+              User Name
+            </h3>,
+            <h3
+              className="reincarnated-person"
+            >
+              Reincarnated As
+            </h3>,
+            <p
+              className="day"
+            >
+              Birthday
+            </p>,
+            <p
+              className="year"
+            >
+              Year Born
+            </p>,
+            <p
+              className="astrology-sign"
+            >
+              Astrological Sign
+            </p>,
+            <p
+              className="delete-title"
+            >
+              Delete?
+            </p>,
+          ],
+          "className": "table-headers",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "User Name",
+              "className": "user-name",
+            },
+            "ref": null,
+            "rendered": "User Name",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Reincarnated As",
+              "className": "reincarnated-person",
+            },
+            "ref": null,
+            "rendered": "Reincarnated As",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Birthday",
+              "className": "day",
+            },
+            "ref": null,
+            "rendered": "Birthday",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Year Born",
+              "className": "year",
+            },
+            "ref": null,
+            "rendered": "Year Born",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Astrological Sign",
+              "className": "astrology-sign",
+            },
+            "ref": null,
+            "rendered": "Astrological Sign",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Delete?",
+              "className": "delete-title",
+            },
+            "ref": null,
+            "rendered": "Delete?",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "handleClick": undefined,
+          "user": Object {
+            "astrologySign": "Aquarius",
+            "day": "FEBRUARY 17",
+            "id": 6,
+            "name": "Cody Taft",
+            "notes": "Well hello there",
+            "reincarnatedPerson": "Lefty Gomez",
+            "year": 1989,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="table-headers"
+          >
+            <h3
+              className="user-name"
+            >
+              User Name
+            </h3>
+            <h3
+              className="reincarnated-person"
+            >
+              Reincarnated As
+            </h3>
+            <p
+              className="day"
+            >
+              Birthday
+            </p>
+            <p
+              className="year"
+            >
+              Year Born
+            </p>
+            <p
+              className="astrology-sign"
+            >
+              Astrological Sign
+            </p>
+            <p
+              className="delete-title"
+            >
+              Delete?
+            </p>
+          </div>,
+          Array [
+            <ReincarnatedUser
+              user={
+                Object {
+                  "astrologySign": "Aquarius",
+                  "day": "FEBRUARY 17",
+                  "id": 6,
+                  "name": "Cody Taft",
+                  "notes": "Well hello there",
+                  "reincarnatedPerson": "Lefty Gomez",
+                  "year": 1989,
+                }
+              }
+            />,
+          ],
+        ],
+        "className": "card-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3
+                className="user-name"
+              >
+                User Name
+              </h3>,
+              <h3
+                className="reincarnated-person"
+              >
+                Reincarnated As
+              </h3>,
+              <p
+                className="day"
+              >
+                Birthday
+              </p>,
+              <p
+                className="year"
+              >
+                Year Born
+              </p>,
+              <p
+                className="astrology-sign"
+              >
+                Astrological Sign
+              </p>,
+              <p
+                className="delete-title"
+              >
+                Delete?
+              </p>,
+            ],
+            "className": "table-headers",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "User Name",
+                "className": "user-name",
+              },
+              "ref": null,
+              "rendered": "User Name",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Reincarnated As",
+                "className": "reincarnated-person",
+              },
+              "ref": null,
+              "rendered": "Reincarnated As",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Birthday",
+                "className": "day",
+              },
+              "ref": null,
+              "rendered": "Birthday",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Year Born",
+                "className": "year",
+              },
+              "ref": null,
+              "rendered": "Year Born",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Astrological Sign",
+                "className": "astrology-sign",
+              },
+              "ref": null,
+              "rendered": "Astrological Sign",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Delete?",
+                "className": "delete-title",
+              },
+              "ref": null,
+              "rendered": "Delete?",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleClick": undefined,
+            "user": Object {
+              "astrologySign": "Aquarius",
+              "day": "FEBRUARY 17",
+              "id": 6,
+              "name": "Cody Taft",
+              "notes": "Well hello there",
+              "reincarnatedPerson": "Lefty Gomez",
+              "year": 1989,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
