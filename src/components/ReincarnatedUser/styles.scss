@@ -1,4 +1,4 @@
-.reincarnated-user {
+.table-headers {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -7,6 +7,28 @@
   align-content: center;
   align-items: center;
   border-bottom: 0.1rem solid black;
+}
+
+.reincarnated-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto 4rem;
+  text-align: left;
+  align-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid black;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto 4rem;
+  text-align: left;
+  align-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .user-delete-button {
@@ -17,13 +39,21 @@
   margin: auto 0;
 }
 
-.table-headers {
+.user-notes {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: auto 4rem;
-  text-align: left;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.user-notes:focus {
+  outline: none;
+}
+
+.submit-notes {
+  border-radius: 10%;
+  height: 2rem;
   align-content: center;
   align-items: center;
-  border-bottom: 0.1rem solid black;
+  margin: auto auto;
 }
