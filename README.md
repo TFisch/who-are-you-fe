@@ -4,7 +4,7 @@
 
 - [Overview](##overview)
 - [Setup](##setup)
-- [Screenshots](##screenshots)
+- [Screenshots](#screenshots)
 
 
 ## Overview
