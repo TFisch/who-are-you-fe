@@ -27,14 +27,19 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1 />,
+        <h1
+          className="form-title"
+        />,
         <h3 />,
         <input
           name="nameInput"
           onChange={[Function]}
+          placeholder="your name"
           type="text"
         />,
-        <p>
+        <p
+          className="error"
+        >
           
         </p>,
         <h3 />,
@@ -45,7 +50,9 @@ ShallowWrapper {
           onChange={[Function]}
           type="date"
         />,
-        <p>
+        <p
+          className="error"
+        >
           
         </p>,
         <Submit
@@ -63,6 +70,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": undefined,
+          "className": "form-title",
         },
         "ref": null,
         "rendered": null,
@@ -86,6 +94,7 @@ ShallowWrapper {
         "props": Object {
           "name": "nameInput",
           "onChange": [Function],
+          "placeholder": "your name",
           "type": "text",
           "value": undefined,
         },
@@ -99,6 +108,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "",
+          "className": "error",
         },
         "ref": null,
         "rendered": "",
@@ -137,6 +147,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "",
+          "className": "error",
         },
         "ref": null,
         "rendered": "",
@@ -164,14 +175,19 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1 />,
+          <h1
+            className="form-title"
+          />,
           <h3 />,
           <input
             name="nameInput"
             onChange={[Function]}
+            placeholder="your name"
             type="text"
           />,
-          <p>
+          <p
+            className="error"
+          >
             
           </p>,
           <h3 />,
@@ -182,7 +198,9 @@ ShallowWrapper {
             onChange={[Function]}
             type="date"
           />,
-          <p>
+          <p
+            className="error"
+          >
             
           </p>,
           <Submit
@@ -200,6 +218,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": undefined,
+            "className": "form-title",
           },
           "ref": null,
           "rendered": null,
@@ -223,6 +242,7 @@ ShallowWrapper {
           "props": Object {
             "name": "nameInput",
             "onChange": [Function],
+            "placeholder": "your name",
             "type": "text",
             "value": undefined,
           },
@@ -236,6 +256,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "",
+            "className": "error",
           },
           "ref": null,
           "rendered": "",
@@ -274,6 +295,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "",
+            "className": "error",
           },
           "ref": null,
           "rendered": "",

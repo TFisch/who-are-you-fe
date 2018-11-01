@@ -21,13 +21,14 @@ ShallowWrapper {
         <Header
           getCleanUsers={[Function]}
           hideForm={[Function]}
+          showForm={[Function]}
           showReincarnatedUsers={[Function]}
         />,
         <DateSubmitForm
           handleDeathSubmit={[Function]}
           headerText="WHO ARE YOU?"
-          inputOneText="What is your name?"
-          inputTwoText="What is your birthday?"
+          inputOneText="what is your name?"
+          inputTwoText="what is your birthday?"
         />,
         false,
         false,
@@ -42,6 +43,7 @@ ShallowWrapper {
         "props": Object {
           "getCleanUsers": [Function],
           "hideForm": [Function],
+          "showForm": [Function],
           "showReincarnatedUsers": [Function],
         },
         "ref": null,
@@ -55,8 +57,8 @@ ShallowWrapper {
         "props": Object {
           "handleDeathSubmit": [Function],
           "headerText": "WHO ARE YOU?",
-          "inputOneText": "What is your name?",
-          "inputTwoText": "What is your birthday?",
+          "inputOneText": "what is your name?",
+          "inputTwoText": "what is your birthday?",
           "showReincarnation": undefined,
         },
         "ref": null,
@@ -78,13 +80,14 @@ ShallowWrapper {
           <Header
             getCleanUsers={[Function]}
             hideForm={[Function]}
+            showForm={[Function]}
             showReincarnatedUsers={[Function]}
           />,
           <DateSubmitForm
             handleDeathSubmit={[Function]}
             headerText="WHO ARE YOU?"
-            inputOneText="What is your name?"
-            inputTwoText="What is your birthday?"
+            inputOneText="what is your name?"
+            inputTwoText="what is your birthday?"
           />,
           false,
           false,
@@ -99,6 +102,7 @@ ShallowWrapper {
           "props": Object {
             "getCleanUsers": [Function],
             "hideForm": [Function],
+            "showForm": [Function],
             "showReincarnatedUsers": [Function],
           },
           "ref": null,
@@ -112,8 +116,8 @@ ShallowWrapper {
           "props": Object {
             "handleDeathSubmit": [Function],
             "headerText": "WHO ARE YOU?",
-            "inputOneText": "What is your name?",
-            "inputTwoText": "What is your birthday?",
+            "inputOneText": "what is your name?",
+            "inputTwoText": "what is your birthday?",
             "showReincarnation": undefined,
           },
           "ref": null,
