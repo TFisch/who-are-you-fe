@@ -35,36 +35,36 @@ ShallowWrapper {
         <div
           className="table-headers"
         >
-          <h3
+          <h2
             className="user-name"
           >
             User Name
-          </h3>
-          <h3
+          </h2>
+          <h2
             className="reincarnated-person"
           >
             Reincarnated As
-          </h3>
-          <p
+          </h2>
+          <h2
             className="day"
           >
             Birthday
-          </p>
-          <p
+          </h2>
+          <h2
             className="year"
           >
             Year Born
-          </p>
-          <p
+          </h2>
+          <h2
             className="astrology-sign"
           >
             Astrological Sign
-          </p>
-          <p
+          </h2>
+          <h2
             className="delete-title"
           >
             Delete?
-          </p>
+          </h2>
         </div>,
         Array [
           <ReincarnatedUser
@@ -92,36 +92,36 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h3
+            <h2
               className="user-name"
             >
               User Name
-            </h3>,
-            <h3
+            </h2>,
+            <h2
               className="reincarnated-person"
             >
               Reincarnated As
-            </h3>,
-            <p
+            </h2>,
+            <h2
               className="day"
             >
               Birthday
-            </p>,
-            <p
+            </h2>,
+            <h2
               className="year"
             >
               Year Born
-            </p>,
-            <p
+            </h2>,
+            <h2
               className="astrology-sign"
             >
               Astrological Sign
-            </p>,
-            <p
+            </h2>,
+            <h2
               className="delete-title"
             >
               Delete?
-            </p>,
+            </h2>,
           ],
           "className": "table-headers",
         },
@@ -137,7 +137,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": "User Name",
-            "type": "h3",
+            "type": "h2",
           },
           Object {
             "instance": null,
@@ -149,7 +149,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": "Reincarnated As",
-            "type": "h3",
+            "type": "h2",
           },
           Object {
             "instance": null,
@@ -161,7 +161,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": "Birthday",
-            "type": "p",
+            "type": "h2",
           },
           Object {
             "instance": null,
@@ -173,7 +173,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": "Year Born",
-            "type": "p",
+            "type": "h2",
           },
           Object {
             "instance": null,
@@ -185,7 +185,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": "Astrological Sign",
-            "type": "p",
+            "type": "h2",
           },
           Object {
             "instance": null,
@@ -197,7 +197,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": "Delete?",
-            "type": "p",
+            "type": "h2",
           },
         ],
         "type": "div",
@@ -208,6 +208,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "handleClick": undefined,
+          "submitNotes": undefined,
           "user": Object {
             "astrologySign": "Aquarius",
             "day": "FEBRUARY 17",
@@ -235,36 +236,36 @@ ShallowWrapper {
           <div
             className="table-headers"
           >
-            <h3
+            <h2
               className="user-name"
             >
               User Name
-            </h3>
-            <h3
+            </h2>
+            <h2
               className="reincarnated-person"
             >
               Reincarnated As
-            </h3>
-            <p
+            </h2>
+            <h2
               className="day"
             >
               Birthday
-            </p>
-            <p
+            </h2>
+            <h2
               className="year"
             >
               Year Born
-            </p>
-            <p
+            </h2>
+            <h2
               className="astrology-sign"
             >
               Astrological Sign
-            </p>
-            <p
+            </h2>
+            <h2
               className="delete-title"
             >
               Delete?
-            </p>
+            </h2>
           </div>,
           Array [
             <ReincarnatedUser
@@ -292,36 +293,36 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h3
+              <h2
                 className="user-name"
               >
                 User Name
-              </h3>,
-              <h3
+              </h2>,
+              <h2
                 className="reincarnated-person"
               >
                 Reincarnated As
-              </h3>,
-              <p
+              </h2>,
+              <h2
                 className="day"
               >
                 Birthday
-              </p>,
-              <p
+              </h2>,
+              <h2
                 className="year"
               >
                 Year Born
-              </p>,
-              <p
+              </h2>,
+              <h2
                 className="astrology-sign"
               >
                 Astrological Sign
-              </p>,
-              <p
+              </h2>,
+              <h2
                 className="delete-title"
               >
                 Delete?
-              </p>,
+              </h2>,
             ],
             "className": "table-headers",
           },
@@ -337,7 +338,7 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "User Name",
-              "type": "h3",
+              "type": "h2",
             },
             Object {
               "instance": null,
@@ -349,7 +350,7 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "Reincarnated As",
-              "type": "h3",
+              "type": "h2",
             },
             Object {
               "instance": null,
@@ -361,7 +362,7 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "Birthday",
-              "type": "p",
+              "type": "h2",
             },
             Object {
               "instance": null,
@@ -373,7 +374,7 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "Year Born",
-              "type": "p",
+              "type": "h2",
             },
             Object {
               "instance": null,
@@ -385,7 +386,7 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "Astrological Sign",
-              "type": "p",
+              "type": "h2",
             },
             Object {
               "instance": null,
@@ -397,7 +398,7 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "Delete?",
-              "type": "p",
+              "type": "h2",
             },
           ],
           "type": "div",
@@ -408,6 +409,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "handleClick": undefined,
+            "submitNotes": undefined,
             "user": Object {
               "astrologySign": "Aquarius",
               "day": "FEBRUARY 17",

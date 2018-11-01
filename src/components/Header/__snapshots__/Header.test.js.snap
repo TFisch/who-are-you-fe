@@ -17,52 +17,60 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
+      "children": <div
+        className="button-wrap"
+      >
         <h1
           className="header-title"
+          onClick={[Function]}
         >
           Who Were You?
-        </h1>,
-        <div
-          className="button-wrap"
-        >
+        </h1>
+        <NavButton
+          buttonText="REINCARNATIONS"
+          handleClick={[Function]}
+          name="reincarnations"
+        />
+      </div>,
+      "className": "header",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="header-title"
+            onClick={[Function]}
+          >
+            Who Were You?
+          </h1>,
           <NavButton
             buttonText="REINCARNATIONS"
             handleClick={[Function]}
             name="reincarnations"
-          />
-        </div>,
-      ],
-      "className": "header",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Who Were You?",
-          "className": "header-title",
-        },
-        "ref": null,
-        "rendered": "Who Were You?",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <NavButton
-            buttonText="REINCARNATIONS"
-            handleClick={[Function]}
-            name="reincarnations"
           />,
-          "className": "button-wrap",
+        ],
+        "className": "button-wrap",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Who Were You?",
+            "className": "header-title",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Who Were You?",
+          "type": "h1",
         },
-        "ref": null,
-        "rendered": Object {
+        Object {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
@@ -75,9 +83,9 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        "type": "div",
-      },
-    ],
+      ],
+      "type": "div",
+    },
     "type": "nav",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -86,52 +94,60 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
+        "children": <div
+          className="button-wrap"
+        >
           <h1
             className="header-title"
+            onClick={[Function]}
           >
             Who Were You?
-          </h1>,
-          <div
-            className="button-wrap"
-          >
+          </h1>
+          <NavButton
+            buttonText="REINCARNATIONS"
+            handleClick={[Function]}
+            name="reincarnations"
+          />
+        </div>,
+        "className": "header",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="header-title"
+              onClick={[Function]}
+            >
+              Who Were You?
+            </h1>,
             <NavButton
               buttonText="REINCARNATIONS"
               handleClick={[Function]}
               name="reincarnations"
-            />
-          </div>,
-        ],
-        "className": "header",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Who Were You?",
-            "className": "header-title",
-          },
-          "ref": null,
-          "rendered": "Who Were You?",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <NavButton
-              buttonText="REINCARNATIONS"
-              handleClick={[Function]}
-              name="reincarnations"
             />,
-            "className": "button-wrap",
+          ],
+          "className": "button-wrap",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Who Were You?",
+              "className": "header-title",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Who Were You?",
+            "type": "h1",
           },
-          "ref": null,
-          "rendered": Object {
+          Object {
             "instance": null,
             "key": undefined,
             "nodeType": "function",
@@ -144,9 +160,9 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
-          "type": "div",
-        },
-      ],
+        ],
+        "type": "div",
+      },
       "type": "nav",
     },
   ],
