@@ -113,12 +113,14 @@ class App extends Component {
         )}
 
         {showReincarnatedUsers && (
-          <CardContainer
-            users={this.state.cleanUsers}
-            handleClick={this.handleClick}
-            showReincarnatedUsers={this.showReincarnatedUsers}
-            submitNotes={this.submitNotes}
-          />
+          <div className="container-wrap">
+            <CardContainer
+              users={this.state.cleanUsers}
+              handleClick={this.handleClick}
+              showReincarnatedUsers={this.showReincarnatedUsers}
+              submitNotes={this.submitNotes}
+            />
+          </div>
         )}
       </div>
     );
