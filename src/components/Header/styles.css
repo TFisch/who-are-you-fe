@@ -1,6 +1,7 @@
 .button-wrap {
   display: flex; }
 
+
 .header {
   background-color: rgba(235, 244, 244, 0.8);
   border-bottom: 2px solid black;
@@ -15,3 +16,4 @@
 .header-title:hover {
   cursor: pointer;
   color: #ba91a9; }
+

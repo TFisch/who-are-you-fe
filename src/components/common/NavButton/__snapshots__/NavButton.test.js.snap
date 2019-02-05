@@ -23,7 +23,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <h3 />,
+      "children": <h3
+        className="button-text"
+      />,
       "className": "nav-button",
       "onClick": undefined,
     },
@@ -34,6 +36,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": undefined,
+        "className": "button-text",
       },
       "ref": null,
       "rendered": null,
@@ -47,7 +50,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <h3 />,
+        "children": <h3
+          className="button-text"
+        />,
         "className": "nav-button",
         "onClick": undefined,
       },
@@ -58,6 +63,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": undefined,
+          "className": "button-text",
         },
         "ref": null,
         "rendered": null,

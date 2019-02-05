@@ -30,37 +30,56 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h3
-          className="user-name"
+        <div
+          className="user-details"
         >
-          Cody Taft
-        </h3>,
-        <h3
-          className="reincarnated-person"
+          <h2
+            className="user-name"
+          >
+            Cody Taft
+          </h2>
+          <h2
+            className="reincarnated-person"
+          >
+            Lefty Gomez
+          </h2>
+          <h2
+            className="day"
+          >
+            FEBRUARY 17
+          </h2>
+          <h2
+            className="year"
+          >
+            1989
+          </h2>
+          <h2
+            className="astrology-sign"
+          >
+            Aquarius
+          </h2>
+          <button
+            className="user-delete-button"
+            id={6}
+          >
+            Delete User
+          </button>
+        </div>,
+        <div
+          className="user-notes"
         >
-          Lefty Gomez
-        </h3>,
-        <p
-          className="day"
-        >
-          FEBRUARY 17
-        </p>,
-        <p
-          className="year"
-        >
-          1989
-        </p>,
-        <p
-          className="astrology-sign"
-        >
-          Aquarius
-        </p>,
-        <button
-          className="user-delete-button"
-          id={6}
-        >
-          Delete User
-        </button>,
+          <p
+            className="user-notes"
+            contentEditable="true"
+          >
+            Well hello there
+          </p>
+          <button
+            className="submit-notes"
+          >
+            Submit Notes
+          </button>
+        </div>,
       ],
       "className": "reincarnated-user",
       "id": 6,
@@ -72,74 +91,170 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Cody Taft",
-          "className": "user-name",
+          "children": Array [
+            <h2
+              className="user-name"
+            >
+              Cody Taft
+            </h2>,
+            <h2
+              className="reincarnated-person"
+            >
+              Lefty Gomez
+            </h2>,
+            <h2
+              className="day"
+            >
+              FEBRUARY 17
+            </h2>,
+            <h2
+              className="year"
+            >
+              1989
+            </h2>,
+            <h2
+              className="astrology-sign"
+            >
+              Aquarius
+            </h2>,
+            <button
+              className="user-delete-button"
+              id={6}
+            >
+              Delete User
+            </button>,
+          ],
+          "className": "user-details",
         },
         "ref": null,
-        "rendered": "Cody Taft",
-        "type": "h3",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Cody Taft",
+              "className": "user-name",
+            },
+            "ref": null,
+            "rendered": "Cody Taft",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Lefty Gomez",
+              "className": "reincarnated-person",
+            },
+            "ref": null,
+            "rendered": "Lefty Gomez",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "FEBRUARY 17",
+              "className": "day",
+            },
+            "ref": null,
+            "rendered": "FEBRUARY 17",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 1989,
+              "className": "year",
+            },
+            "ref": null,
+            "rendered": 1989,
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Aquarius",
+              "className": "astrology-sign",
+            },
+            "ref": null,
+            "rendered": "Aquarius",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Delete User",
+              "className": "user-delete-button",
+              "id": 6,
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": "Delete User",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Lefty Gomez",
-          "className": "reincarnated-person",
+          "children": Array [
+            <p
+              className="user-notes"
+              contentEditable="true"
+            >
+              Well hello there
+            </p>,
+            <button
+              className="submit-notes"
+            >
+              Submit Notes
+            </button>,
+          ],
+          "className": "user-notes",
         },
         "ref": null,
-        "rendered": "Lefty Gomez",
-        "type": "h3",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "FEBRUARY 17",
-          "className": "day",
-        },
-        "ref": null,
-        "rendered": "FEBRUARY 17",
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": 1989,
-          "className": "year",
-        },
-        "ref": null,
-        "rendered": 1989,
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Aquarius",
-          "className": "astrology-sign",
-        },
-        "ref": null,
-        "rendered": "Aquarius",
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Delete User",
-          "className": "user-delete-button",
-          "id": 6,
-          "onClick": undefined,
-        },
-        "ref": null,
-        "rendered": "Delete User",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Well hello there",
+              "className": "user-notes",
+              "contentEditable": "true",
+            },
+            "ref": null,
+            "rendered": "Well hello there",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Submit Notes",
+              "className": "submit-notes",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": "Submit Notes",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -151,37 +266,56 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h3
-            className="user-name"
+          <div
+            className="user-details"
           >
-            Cody Taft
-          </h3>,
-          <h3
-            className="reincarnated-person"
+            <h2
+              className="user-name"
+            >
+              Cody Taft
+            </h2>
+            <h2
+              className="reincarnated-person"
+            >
+              Lefty Gomez
+            </h2>
+            <h2
+              className="day"
+            >
+              FEBRUARY 17
+            </h2>
+            <h2
+              className="year"
+            >
+              1989
+            </h2>
+            <h2
+              className="astrology-sign"
+            >
+              Aquarius
+            </h2>
+            <button
+              className="user-delete-button"
+              id={6}
+            >
+              Delete User
+            </button>
+          </div>,
+          <div
+            className="user-notes"
           >
-            Lefty Gomez
-          </h3>,
-          <p
-            className="day"
-          >
-            FEBRUARY 17
-          </p>,
-          <p
-            className="year"
-          >
-            1989
-          </p>,
-          <p
-            className="astrology-sign"
-          >
-            Aquarius
-          </p>,
-          <button
-            className="user-delete-button"
-            id={6}
-          >
-            Delete User
-          </button>,
+            <p
+              className="user-notes"
+              contentEditable="true"
+            >
+              Well hello there
+            </p>
+            <button
+              className="submit-notes"
+            >
+              Submit Notes
+            </button>
+          </div>,
         ],
         "className": "reincarnated-user",
         "id": 6,
@@ -193,74 +327,170 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Cody Taft",
-            "className": "user-name",
+            "children": Array [
+              <h2
+                className="user-name"
+              >
+                Cody Taft
+              </h2>,
+              <h2
+                className="reincarnated-person"
+              >
+                Lefty Gomez
+              </h2>,
+              <h2
+                className="day"
+              >
+                FEBRUARY 17
+              </h2>,
+              <h2
+                className="year"
+              >
+                1989
+              </h2>,
+              <h2
+                className="astrology-sign"
+              >
+                Aquarius
+              </h2>,
+              <button
+                className="user-delete-button"
+                id={6}
+              >
+                Delete User
+              </button>,
+            ],
+            "className": "user-details",
           },
           "ref": null,
-          "rendered": "Cody Taft",
-          "type": "h3",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Cody Taft",
+                "className": "user-name",
+              },
+              "ref": null,
+              "rendered": "Cody Taft",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Lefty Gomez",
+                "className": "reincarnated-person",
+              },
+              "ref": null,
+              "rendered": "Lefty Gomez",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "FEBRUARY 17",
+                "className": "day",
+              },
+              "ref": null,
+              "rendered": "FEBRUARY 17",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 1989,
+                "className": "year",
+              },
+              "ref": null,
+              "rendered": 1989,
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Aquarius",
+                "className": "astrology-sign",
+              },
+              "ref": null,
+              "rendered": "Aquarius",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Delete User",
+                "className": "user-delete-button",
+                "id": 6,
+                "onClick": undefined,
+              },
+              "ref": null,
+              "rendered": "Delete User",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Lefty Gomez",
-            "className": "reincarnated-person",
+            "children": Array [
+              <p
+                className="user-notes"
+                contentEditable="true"
+              >
+                Well hello there
+              </p>,
+              <button
+                className="submit-notes"
+              >
+                Submit Notes
+              </button>,
+            ],
+            "className": "user-notes",
           },
           "ref": null,
-          "rendered": "Lefty Gomez",
-          "type": "h3",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "FEBRUARY 17",
-            "className": "day",
-          },
-          "ref": null,
-          "rendered": "FEBRUARY 17",
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": 1989,
-            "className": "year",
-          },
-          "ref": null,
-          "rendered": 1989,
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Aquarius",
-            "className": "astrology-sign",
-          },
-          "ref": null,
-          "rendered": "Aquarius",
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Delete User",
-            "className": "user-delete-button",
-            "id": 6,
-            "onClick": undefined,
-          },
-          "ref": null,
-          "rendered": "Delete User",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Well hello there",
+                "className": "user-notes",
+                "contentEditable": "true",
+              },
+              "ref": null,
+              "rendered": "Well hello there",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Submit Notes",
+                "className": "submit-notes",
+                "onClick": undefined,
+              },
+              "ref": null,
+              "rendered": "Submit Notes",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",

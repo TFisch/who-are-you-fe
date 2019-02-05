@@ -13,6 +13,11 @@ button:focus {
   border: none;
 }
 
+.container-wrap {
+  max-height: 40rem;
+  overflow: scroll;
+}
+
 h2 {
   width: 12rem;
   text-align: center;
