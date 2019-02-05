@@ -62,7 +62,7 @@ class ReincarnationDisplay extends Component {
       return (
         <article className="reincarnation-display no-reincarnation">
           <h2 className="no-past-message">
-            Sorry no soul wanted to embody your body...
+            Welcome to Earth! You are a new Soul!!!
           </h2>
           <button onClick={this.props.tryAgain} className="try-again-btn">
             Try Again?
