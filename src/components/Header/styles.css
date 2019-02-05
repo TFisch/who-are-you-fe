@@ -1,19 +1,16 @@
 .button-wrap {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 2em; }
+  display: flex; }
 
 .header {
   background-color: rgba(235, 244, 244, 0.8);
   border-bottom: 2px solid black;
-  width: 100%; }
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5rem; }
 
 .header-title {
-  text-align: center;
   font-size: 1.5em;
-  justify-content: space-between;
-  width: auto;
-  float: left; }
+  width: auto; }
 
 .header-title:hover {
   cursor: pointer;
