@@ -1,6 +1,6 @@
 .button-wrap {
+  align-items: center;
   display: flex; }
-
 
 .header {
   background-color: rgba(235, 244, 244, 0.8);
@@ -16,4 +16,3 @@
 .header-title:hover {
   cursor: pointer;
   color: #ba91a9; }
-

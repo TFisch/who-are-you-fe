@@ -27,10 +27,10 @@ class Header extends Component {
   render() {
     return (
       <nav className="header">
-        <div className="button-wrap">
-          <h1 className="header-title" onClick={this.handleTitleClick}>
-            Who Were You?
+        <h1 className="header-title" onClick={this.handleTitleClick}>
+          Who Were You?
           </h1>
+        <div className="button-wrap">
           <NavButton
             buttonText="REINCARNATIONS"
             name="reincarnations"
